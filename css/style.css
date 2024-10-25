@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-palido:#F0EBD8;
+    --color-oscuro:#172726;
+    --color-verde:#28B290;
+    --color-rose:#E7A9AE;
+}
+.contenedor{
+  display: flex;
+  flex-direction: column;
+}
+.slogan{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-verde);
+}
+.conversation{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-rose);
+}
+.meet{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-verde);
+}
+.start{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-rose);    
+}
+.podcast{
+    height: 300vh;
+    width: 100%;
+    background-color: var(--color-verde);
+}
+.testimonials{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-rose);
+}
+.join{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-verde);
+}
+.copyright{
+    height: 40vh;
+    width: 100%;
+    background-color: var(--color-rose);
+}
