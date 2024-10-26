@@ -1,7 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
 * {
   margin: 0px;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 :root {
@@ -21,6 +26,7 @@
   height: 100vh;
   width: 100%;
   background-color: var(--color-verde);
+ 
 }
 
 .conversation {
@@ -30,6 +36,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+ 
 
 
 }
@@ -45,7 +52,7 @@
   text-align: center;
   display: inline-block;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 220px;
 }
 
 .central_txt {
@@ -55,22 +62,25 @@
 }
 
 .txt_principal {
-  font-size: 100px;
+  font-size: 160px;
   color: var(--color-palido);
 }
 
 .txt_convesation {
   color: var(--color-palido);
-  font-size: 100px;
+  font-size: 160px;
   top: 20px;
 
 }
 
 .parrafo {
   font-size: 15px;
-  padding-top: 30px;
+  /* padding-top: 20px; */
+  max-width: 600px;
   text-align: center;
   color: var(--color-oscuro);
+  line-height: 1.6;
+  
 
 }
 
@@ -79,25 +89,63 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-top: 150px;
+  padding-top: 10px;
 }
 
 .circuloletras_izq img {
-  width: 200px;
+  width: 320px;
+  /* padding-bottom: 400px; */
 
 
 
 }
 
+.linea-izquierda {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 0.8;
+  padding-top: 60px;
+  padding-left: 100px;
+  width:350px;
 
 
+}
 
+.linea-derecha {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 420px;
+  opacity: 0.8;
+    padding-bottom: 100px;
+  padding-right: 200px;}  
 
+.conversation {
+  position: relative; /* Esto permite que los pseudo-elementos se posicionen dentro de este contenedor */
+}
 
+/* Línea superior izquierda */
+.conversation::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(90deg, transparent, #FFFFFF, transparent); /* Efecto degradado */
+  transform: rotate(-20deg);
+  opacity: 0.8;
+}
 
-
-
-
+/* Línea inferior derecha */
+.conversation::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(90deg, transparent, #FFFFFF, transparent); /* Efecto degradado */
+  transform: rotate(20deg);
+  opacity: 0.8;
+}
 
 
 
@@ -141,6 +189,119 @@
   width: 100%;
   background-color: var(--color-rose);
 }
+
+.contenido_titulo{
+
+   font-size: 150px;
+  padding-left: 150px;
+  padding-top: 15%;
+  letter-spacing: 10px;
+  color: var(--color-palido); 
+  font-family: 'DM Sans';
+  margin: 0;
+
+  
+}
+.contenido{
+
+  padding-left: 250px;
+ 
+
+}
+
+.parrafo_start{
+  font-size: 20px;
+  padding-top: 50px;
+  max-width: 800px;
+  /* text-align: center; */
+  color: var(--color-oscuro);
+  line-height: 1.6;
+  padding-left: 155px;
+  text-align: justify;
+
+
+}
+
+.contenido_titulo-podcast{
+  font-size: 150px;
+  padding-left: 150px;
+  letter-spacing: 10px;
+  color: var(--color-palido); 
+  font-family: 'DM Sans';
+  margin: 0;
+  line-height: 0.4; 
+
+  
+}
+.listen-now{
+
+    padding: 10px 20px;
+    border: 2px solid black;  /* Borde negro de 2px */
+    border-radius: 25px;      /* Bordes redondeados */
+    background-color: transparent;  /* Fondo transparente */
+    color: black;             /* Color del texto */
+    font-weight: bold;        /* Texto en negrita */
+    font-size: 16px;          /* Tamaño del texto */
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+.listen-now:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente al pasar el mouse */
+}
+
+.image-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.main-image {
+  max-width: 80%;
+  height: auto;
+
+
+}
+
+.circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: #f4df9d;
+  border-radius: 50%;
+  top: 0;
+  right: -100px;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  opacity: 0.6;
+}
+
+.wave1 {
+  top: 90px;
+  left: 48%;
+  width: 250px;
+
+
+}
+
+.wave2 {
+  bottom:2750% ;
+  left: 50%;
+  width: 200px;
+}
+
+
+
+
+
 
 .podcast {
   height: 300vh;
