@@ -1,11 +1,24 @@
 
+@import url(slogan.css);
+
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 
 * {
   margin: 0px;
   padding: 0;
   box-sizing: border-box;
+
+}
+:root {
+  --color-palido: #f0ebd8;
+  --color-oscuro: #172726;
+  --color-verde: #28b290;
+  --color-rose: #e7a9ae;
+}
+
   
 }
 
@@ -17,22 +30,28 @@
 
 }
 
+
 .contenedor {
   display: flex;
   flex-direction: column;
 }
 
+
+
 .slogan {
   height: 100vh;
   width: 100%;
   background-color: var(--color-verde);
- 
-}
+
+
 
 .conversation {
   height: 100vh;
   width: 100%;
   background-color: var(--color-rose);
+
+}
+
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -147,17 +166,22 @@
   opacity: 0.8;
 }
 
+
 .meet {
   height: 100vh;
   width: 100%;
   background-color: var(--color-verde);
 }
 
+
+
+
 .start {
   height: 100vh;
   width: 100%;
   background-color: var(--color-rose);
 }
+
 
 .contenido_titulo{
 
@@ -287,6 +311,7 @@
 
 
 
+
 .podcast {
   height: 300vh;
   width: 100%;
@@ -306,10 +331,15 @@
 
 
 
+
+
 .testimonials {
   height: 100vh;
   width: 100%;
   background-color: var(--color-rose);
+
+}
+
   
 }
 .testimonials_container{
@@ -423,14 +453,17 @@ letter-spacing: 3px;
 }
 
 
+
 .join {
   height: 100vh;
   width: 100%;
   background-color: var(--color-verde);
 }
 
+
+
 .copyright {
   height: 40vh;
   width: 100%;
   background-color: var(--color-rose);
-}
+
