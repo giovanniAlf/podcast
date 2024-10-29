@@ -16,7 +16,7 @@
 
 }
 
-.contenedor {
+.container {
   display: flex;
   flex-direction: column;
 }
@@ -40,12 +40,12 @@
 
 }
 
-.title {
+.conversation__title {
   display: flex;
   align-items: center;
 }
 
-.whatwedo {
+.conversation__title-whatwedo {
   font-size: 20px;
   color: var(--color-palido);
   text-align: center;
@@ -54,25 +54,25 @@
   padding-top: 118px;
 }
 
-.central_txt {
+.conversation__central-text {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.txt_principal {
+.conversation__main-text {
   font-size: 160px;
   color: var(--color-palido);
 }
 
-.txt_convesation {
+.conversation__sub-text {
   color: var(--color-palido);
   font-size: 160px;
   top: 20px;
 
 }
 
-.parrafo {
+.conversation__parrafo {
   font-size: 15px;
   /* padding-top: 20px; */
   max-width: 600px;
@@ -83,7 +83,7 @@
 
 }
 
-.estrella-verde {
+.conversation__star {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -91,15 +91,12 @@
   padding-top: 10px;
 }
 
-.circuloletras_izq img {
+.conversation__circle-text-left img {
   width: 320px;
-
-
-
 
 }
 
-.linea-izquierda {
+.conversation__line-left {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -108,10 +105,9 @@
   padding-left: 100px;
   width: 350px;
 
-
 }
 
-.linea-derecha {
+.conversation__line-right {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -123,7 +119,7 @@
 
 .conversation {
   position: relative;
-  /* Esto permite que los pseudo-elementos se posicionen dentro de este contenedor */
+  
 }
 
 /* Línea superior izquierda */
@@ -137,7 +133,6 @@
   transform: rotate(-20deg);
   opacity: 0.8;
 }
-
 /* Línea inferior derecha */
 .conversation::after {
   content: "";
@@ -150,19 +145,24 @@
   opacity: 0.8;
 }
 
+
+
+/* MEET */
 .meet {
   height: 100vh;
   width: 100%;
   background-color: var(--color-verde);
 }
 
-.start {
+
+/* STAR */
+.startup {
   height: 100vh;
   width: 100%;
   background-color: var(--color-rose);
 }
 
-.contenido_titulo {
+.startup__title{
 
   font-size: 150px;
   padding-left: 150px;
@@ -172,17 +172,15 @@
   font-family: 'DM Sans';
   margin: 0;
 
-
 }
 
-.contenido {
+.startup__content {
 
   padding-left: 120px;
 
-
 }
 
-.parrafo_start {
+.startup__paragraph {
   font-size: 20px;
   padding-top: 50px;
   max-width: 800px;
@@ -195,7 +193,7 @@
 
 }
 
-.contenido_titulo-podcast {
+.startup__title-podcast {
   font-size: 150px;
   padding-left: 150px;
   letter-spacing: 10px;
@@ -207,7 +205,7 @@
 
 }
 
-.listen-now {
+.startup__button-listennow {
 
   padding: 10px 20px;
   border: 2px solid black;
@@ -228,12 +226,12 @@
   margin-top: 30px;
 }
 
-.listen-now:hover {
+.startup__button-listennow:hover {
   background-color: rgba(0, 0, 0, 0.1);
   /* Fondo semitransparente al pasar el mouse */
 }
 
-.image-container {
+.startup__image-container{
   flex: 1;
   position: relative;
   display: flex;
@@ -242,23 +240,18 @@
   bottom: 600px;
 }
 
-
-
-
-.main-image {
+.startup__main-image {
   max-width: 80%;
   height: auto;
   margin-bottom: -720px;
   position: absolute;
-
   /* width: 100%;
    height: 100%; */
   z-index: 1;
-  /* Mantiene el círculo en el fondo */
 
 }
 
-.VR {
+.startup__vr-image {
 
   max-width: 80%;
   height: auto;
@@ -270,51 +263,36 @@
   /* height: 100%; */
   object-fit: cover;
   z-index: 2;
-  /* Coloca a la persona encima del círculo */
-
-
-
+  
 }
 
-
-.wave {
+.startup__wave {
   position: absolute;
   width: 100px;
   height: auto;
   opacity: 0.6;
 }
 
-.wave1 {
-  top: 3550px;
+.startup__wave--up {
+  top: 4020px;
   left: 48%;
   width: 250px;
-
-
 }
 
-.wave2 {
-  top: 2880px;
+.startup__wave--down {
+  top: 3480px;
   left: 50%;
   width: 200px;
 }
 
 
-
-
-
+/* PODCAST */
 
 .podcast {
   height: 300vh;
   width: 100%;
   background-color: var(--color-verde);
 }
-
-
-
-
-
-
-
 
 
 
@@ -326,12 +304,7 @@
 
 }
 
-.testimonials_container {}
-
-.cnt {}
-
-.texto_centro {
-
+.testimonials__title{
   padding-top: 150px;
   text-align: center;
   font-size: 200px;
@@ -340,9 +313,7 @@
   letter-spacing: 10px;
 }
 
-.parrafo-testimonials {
-
-
+.testimonials__paragraph {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
@@ -351,20 +322,15 @@
 
 }
 
-.parrafo_testimonials-down {
-
-
+.testimonials__paragraph--down {
   text-align: center;
   margin: 0 auto;
   max-width: 800px;
   padding-top: 20px;
   font-weight: bold;
-
 }
 
-.linea_debajo {
-
-
+.testimonials__separador {
   margin: 0 auto;
   width: 60px;
   color: red;
@@ -376,8 +342,7 @@
 
 }
 
-.name {
-
+.testimonials__author-name{
   position: relative;
   top: 80px;
   margin: 0 auto;
@@ -388,12 +353,9 @@
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
-
-
-
 }
 
-.contenedor_imagenes {
+.testimonials__images {
   flex: 1;
   position: relative;
   display: flex;
@@ -403,42 +365,34 @@
 
 }
 
-.circulo_derecha {
-  
+.testimonials__image-right {
   position: relative;
-
   width: 400px;
   height: 800px;
   /* left: px;  */
   bottom: 20px;
-
 }
 
-.circulo_izquierda {
-
-
-
+.testimonials__image-left {
   position: relative;
   width: 400px;
   height: 900px;
   right: 100px;
+
   bottom: 1450px;
-
-
-
 }
 
 
+/* JOIN */
 .join {
   height: 100vh;
   width: 100%;
   background-color: var(--color-verde);
 }
 
-.join_container {
+.join__container {
 
   position: relative;
-
   right: 455px;
   top: 270px;
   font-family: 'DM Sans';
@@ -448,8 +402,7 @@
 
 }
 
-.title-lorem {
-
+.join__title-lorem{
   display: flex;
   justify-content: center;
   right: 85px;
@@ -457,8 +410,7 @@
 
 }
 
-.subtitle-lorem {
-
+.join__title {
   position: relative;
   top: 10px;
   font-size: 150px;
@@ -470,9 +422,7 @@
 
 }
 
-.subtitle_down-lorem {
-
-
+.join__subtitle--lower {
   position: relative;
   font-size: 150px;
   margin: 0;
@@ -485,7 +435,7 @@
 
 }
 
-.join__correo {
+.join__email {
   position: relative;
   top: 180px;
   display: flex;
@@ -498,33 +448,22 @@
 
 }
 
-.hr_join {
-
+.join__separador {
   width: 790px;
-
   position: relative;
   top: 200px;
   margin: 0 auto;
   right: 329px;
-
 }
 
-.submit-join {
-
-
+.join__submit {
   padding: 10px 20px;
   border: 4px solid black;
-
   border-radius: 25px;
-
   background-color: var(--color-rose);
-
   color: black;
-
   font-weight: bold;
-
   font-size: 16px;
-
   cursor: pointer;
   transition: 0.3s ease;
   margin-left: 330px;
@@ -536,24 +475,18 @@
 
 }
 
-.submit-join:hover {
-
-
-
+.join__submit:hover {
   background-color: rgba(0, 0, 0, 0.1);
-
 }
 
-/* Contenedor de las imágenes superpuestas */
-.imagenes-lorem {
+.join__images {
   position: relative;
   width: 300px; /* Ajusta el tamaño según el diseño */
   height: 300px; /* Ajusta según el tamaño del círculo */
   margin: 0 auto;
 }
 
-/* Imagen de la firma */
-.firma {
+.join__firma {
   position: absolute;
   /* top: 20px; */
   bottom: 520px;
@@ -562,8 +495,7 @@
   width: 300px; /* Ajusta el tamaño según sea necesario */
 }
 
-/* Imagen de la medialuna */
-.medialuna {
+.join__moon {
   position: absolute;
   /* top: 0; */
   left: 687px;
@@ -573,8 +505,7 @@
   bottom: -94px;
 }
 
-/* Imagen de letras en arco */
-.letrasmedialuna {
+.join__letters {
   position: absolute;
   /* top: -90px; Ajusta la posición para que esté en arco */
   left: 755px;
@@ -584,8 +515,7 @@
 
 }
 
-/* Imagen de la estrella y medialuna */
-.estrella-medialuna {
+.join__star {
   position: absolute;
   bottom: 515px;
   left: 679px;
@@ -598,7 +528,7 @@
 
 
 
-
+/* COPYRIGHT */
 
 
 .copyright {
@@ -607,7 +537,7 @@
   background-color: var(--color-rose);
 }
 
-.txt_our-brand {
+.copyright__title{
 
   position: relative;
   top: 100px;
@@ -620,7 +550,7 @@
 
 }
 
-.copy_container {
+.copyright__container {
 
   display: flex;
   flex-direction: row;
@@ -629,7 +559,7 @@
 
 }
 
-.p_ourband {
+.copyright__text {
 
   top: 110px;
   position: relative;
