@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+@import url(slogan.css);
+@import url(meet.css);
+@import url(podcast.css);
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 * {
   margin: 0px;
@@ -295,7 +299,7 @@
 }
 
 
-
+/* TESTIMONIALS */
 
 .testimonials {
   height: 100vh;
@@ -381,6 +385,16 @@
 
   bottom: 1450px;
 }
+
+/* .testimonials__texton--next{
+
+
+  color: var(--color-rose);
+  font-size: 20px;
+  position: relative;
+  right: -50px;
+  z-index: 2;
+} */
 
 
 /* JOIN */
@@ -523,7 +537,6 @@
   height: auto;
   z-index: 3;
 }
-
 
 
 
