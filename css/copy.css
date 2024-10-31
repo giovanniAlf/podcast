@@ -1,0 +1,46 @@
+.copyright__title{
+
+    position: relative;
+    top: 100px;
+    left: 3px;
+    letter-spacing: 1px;
+    font-family: 'DM Sans';
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--color-palido);
+  
+  }
+  
+  .copyright__container {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+  
+  }
+  
+  .copyright__text {
+  
+    top: 110px;
+    position: relative;
+    left: 3px;
+    font-family: 'DM Sans';
+    font-weight: 600;
+  
+  }
+  
+  .copy {
+    top: 180px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    right: 279px;
+    color: var(--color-palido);
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'DM Sans';
+  
+  
+  }
+  

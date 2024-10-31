@@ -1,0 +1,136 @@
+@media (max-width: 768px) {
+    /* Ajuste general */
+    .container {
+      padding: 10px;
+    }
+  
+    /* Ajustes de la sección 'slogan' */
+    .slogan {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+      padding: 20px;
+      background-size: cover;
+    }
+  
+    .slogan__titulo {
+      font-size: 80px;
+      line-height: 90px;
+      margin-top: 20px;
+    }
+  
+    .slogan__texto {
+      font-size: 16px;
+    }
+  
+    .slogan__botones {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .slogan__presionar, .slogan__presionar--verde {
+      font-size: 14px;
+      padding: 8px;
+      text-align: center;
+    }
+  
+    /* Ajustes de la sección 'conversation' */
+    .conversation__title-whatwedo {
+      font-size: 16px;
+      padding-top: 20px;
+    }
+  
+    .conversation__main-text,
+    .conversation__sub-text {
+      font-size: 80px;
+    }
+  
+    .conversation__parrafo {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    /* Ajustes para 'startup' */
+    .startup__title {
+      font-size: 80px;
+      padding-left: 20px;
+      padding-top: 10%;
+    }
+  
+    .startup__paragraph {
+      font-size: 16px;
+      padding-left: 20px;
+    }
+  
+    .startup__button-listennow {
+      font-size: 14px;
+      margin-left: 20px;
+    }
+  
+    /* Ajustes de la sección 'podcast' */
+    .podcast {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .podcast__titulo {
+      font-size: 100px;
+      text-align: center;
+    }
+  
+    .podcast__subtitulo {
+      font-size: 60px;
+    }
+  
+    .podcast__texto {
+      font-size: 16px;
+      width: 100%;
+    }
+  
+    .podcast__boton {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    /* Ajustes de la sección 'testimonials' */
+    .testimonials__title {
+      font-size: 100px;
+      padding-top: 30px;
+    }
+  
+    .testimonials__paragraph {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    /* Ajustes de la sección 'join' */
+    .join__title,
+    .join__subtitle--lower {
+      font-size: 80px;
+      text-align: center;
+    }
+  
+    .join__email {
+      font-size: 18px;
+      right: 0;
+      text-align: center;
+    }
+  
+    .join__submit {
+      font-size: 14px;
+      width: 120px;
+      margin-left: 0;
+    }
+  
+    /* Ajustes de la sección 'copyright' */
+    .copyright__title {
+      font-size: 20px;
+      text-align: center;
+      padding-top: 20px;
+    }
+  
+    .copy {
+      font-size: 20px;
+    }
+  }
+  
