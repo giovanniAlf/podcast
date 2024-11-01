@@ -1,105 +1,171 @@
+.conversation {
+  position: relative;
+}
+
 .conversation__title {
-    display: flex;
-    align-items: center;
-  }
-  
-  .conversation__title-whatwedo {
-    font-size: 20px;
-    color: var(--color-palido);
-    text-align: center;
-    display: inline-block;
-    margin: 0 auto;
-    padding-top: 118px;
-  }
-  
-  .conversation__central-text {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
+  display: flex;
+  align-items: center;
+}
+
+.conversation__title-whatwedo {
+  font-size: 20px;
+  color: var(--color-palido);
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 118px;
+}
+
+.conversation__central-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conversation__main-text {
+  font-size: 160px;
+  color: var(--color-palido);
+}
+
+.conversation__sub-text {
+  color: var(--color-palido);
+  font-size: 160px;
+  top: 20px;
+}
+
+.conversation__parrafo {
+  font-size: 15px;
+  max-width: 600px;
+  text-align: center;
+  color: var(--color-oscuro);
+  line-height: 1.6;
+}
+
+.conversation__star {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.conversation__circle-text-left img {
+  width: 320px;
+}
+
+.conversation__line-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 0.8;
+  padding-top: 60px;
+  padding-left: 100px;
+  width: 350px;
+}
+
+.conversation__line-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 420px;
+  opacity: 0.8;
+  padding-bottom: 100px;
+  padding-right: 200px;
+}
+
+/* Línea superior izquierda */
+.conversation::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
+  transform: rotate(-20deg);
+  opacity: 0.8;
+}
+
+/* Línea inferior derecha */
+.conversation::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
+  transform: rotate(20deg);
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
   .conversation__main-text {
-    font-size: 160px;
-    color: var(--color-palido);
+    font-size: 100px;
   }
-  
+
   .conversation__sub-text {
-    color: var(--color-palido);
-    font-size: 160px;
-    top: 20px;
-  
+    font-size: 100px;
   }
-  
+
   .conversation__parrafo {
-    font-size: 15px;
-    /* padding-top: 20px; */
-    max-width: 600px;
-    text-align: center;
-    color: var(--color-oscuro);
-    line-height: 1.6;
-  
-  
+    font-size: 14px;
+    max-width: 90%;
   }
-  
-  .conversation__star {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 10px;
-  }
-  
+
   .conversation__circle-text-left img {
-    width: 320px;
-  
+    width: 250px;
   }
-  
+
   .conversation__line-left {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    opacity: 0.8;
-    padding-top: 60px;
-    padding-left: 100px;
-    width: 350px;
-  
+    padding-left: 60px;
+    width: 250px;
   }
-  
+
   .conversation__line-right {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 420px;
-    opacity: 0.8;
-    padding-bottom: 100px;
-    padding-right: 200px;
+    padding-right: 100px;
+    width: 300px;
   }
-  
+}
+
+@media (max-width: 768px) {
   .conversation {
-    position: relative;
-    
+    padding: 20px; /* Añadir padding para espacios en móviles */
   }
-  
-  /* Línea superior izquierda */
-  .conversation::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
-    /* Efecto degradado */
-    transform: rotate(-20deg);
-    opacity: 0.8;
+
+  .conversation__main-text {
+    font-size: 80px;
   }
-  /* Línea inferior derecha */
-  .conversation::after {
-    content: "";
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
-    /* Efecto degradado */
-    transform: rotate(20deg);
-    opacity: 0.8;
+
+  .conversation__sub-text {
+    font-size: 80px;
   }
-  
+
+  .conversation__parrafo {
+    font-size: 12px;
+  }
+
+  .conversation__circle-text-left img {
+    width: 200px;
+  }
+
+  .conversation__line-left,
+  .conversation__line-right {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conversation__main-text {
+    font-size: 60px;
+  }
+
+  .conversation__sub-text {
+    font-size: 60px;
+  }
+
+  .conversation__parrafo {
+    font-size: 10px;
+  }
+
+  .conversation__circle-text-left img {
+    width: 150px;
+  }
+}
