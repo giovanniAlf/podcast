@@ -22,7 +22,9 @@
   --color-rose: #E7A9AE;
 
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .container {
   display: flex;
   flex-direction: column;

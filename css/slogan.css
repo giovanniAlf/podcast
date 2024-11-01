@@ -13,8 +13,12 @@
   grid-row: 1 / 2;
   grid-column: 1 / 2;
   padding-left: 150px;
+  cursor: pointer;
 }
-
+.slogan__botonprueba{
+  text-decoration: none;
+  color: var(--color-palido);
+}
 .slogan__microfono {
   display: flex;
   justify-content: center;
