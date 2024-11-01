@@ -16,10 +16,10 @@
 }
 
 :root {
-  --color-palido: #F0EBD8;
-  --color-oscuro: #172726;
+  --color-palido: #gray;
+  --color-oscuro: #pink;
   --color-verde: red;
-  --color-rose: #E7A9AE;
+  --color-rose: #blue;
 
 }
 html{
