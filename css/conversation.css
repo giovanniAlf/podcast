@@ -94,3 +94,31 @@
   transform: rotate(20deg);
   opacity: 0.8;
 }
+
+@media (max-width: 700px) {
+  .conversation__main-text {
+    font-size: 80px;
+  }
+
+  .conversation__sub-text {
+    font-size: 70px;
+  }
+
+  .conversation__parrafo {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  .conversation__central-text {
+    justify-content: start;
+
+  }
+
+  .conversation__star {
+    display: none;
+  }
+
+  .conversation__circle-text-left {
+    display: none;
+  }
+}

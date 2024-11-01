@@ -42,7 +42,7 @@
   width: 100vw;
   background-color: var(--color-rose);
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-direction: column;
   background-image: url(../img/ruido.png);
 }
