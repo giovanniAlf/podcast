@@ -40,4 +40,28 @@
   
   
   }
-  
+    @media (max-width: 700px) 
+    {
+      .copyright__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 10px;
+    }
+        .copyright__title {
+          top: 0;
+          font-size: 20px;
+        }
+                    .copyright__text {
+          
+                      top: 0;
+                    }
+                    .copy{
+                      top: 0;
+                      right: 0;
+                      font-size: 30px;
+                    }
+                    .copyright__section{
+                      width: 50vw;
+                    }
+    }
