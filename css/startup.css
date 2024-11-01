@@ -1,16 +1,16 @@
 /* Startup */
-.startup__title {
-  font-size: 150px;
-  padding-left: 150px;
-  padding-top: 15%;
-  letter-spacing: 10px;
+.startup{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   color: var(--color-palido);
   font-family: 'DM Sans';
-  margin: 0;
 }
 
 .startup__content {
-  padding-left: 120px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .startup__paragraph {
@@ -21,19 +21,20 @@
   line-height: 1.6;
   padding-left: 150px;
   text-align: justify;
+  font-weight: bold;
 }
 
-.startup__title-podcast {
-  font-size: 150px;
+.startup__title{
+  font-size: 135px;
   padding-left: 150px;
   letter-spacing: 10px;
   color: var(--color-palido);
   font-family: 'DM Sans';
-  margin: 0;
-  line-height: 0.4;
+  line-height: 120px;
 }
 
 .startup__button-listennow {
+  width: 200px;
   padding: 10px 20px;
   border: 2px solid black;
   border-radius: 25px;
@@ -45,6 +46,7 @@
   transition: 0.3s ease;
   margin-left: 160px;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 
 .startup__button-listennow:hover {
@@ -52,47 +54,24 @@
 }
 
 .startup__image-container {
-  flex: 1;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.startup__main-image{
+  grid-row: 1 / 1;
+  grid-column: 2 / 3;
   display: flex;
   justify-content: end;
-  align-items: end;
-  bottom: 600px;
 }
-
-.startup__main-image {
-  max-width: 80%;
-  height: auto;
-  margin-bottom: -720px;
-  position: absolute;
-  z-index: 1;
-}
-
 .startup__vr-image {
-  max-width: 80%;
-  height: auto;
-  margin-bottom: -773px;
-  position: absolute;
-  width: 800px;
-  object-fit: cover;
-  z-index: 2;
+  grid-row: 1 / 1;
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: end;
 }
-
-.startup__wave {
-  position: absolute;
-  width: 100px;
-  height: auto;
-  opacity: 0.6;
-}
-
-.startup__wave--up {
-  top: 4020px;
-  left: 48%;
-  width: 250px;
-}
-
-.startup__wave--down {
-  top: 3480px;
-  left: 50%;
-  width: 200px;
+.startup__firmas{
+  display: flex;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
 }
