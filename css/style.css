@@ -15,6 +15,7 @@
   box-sizing: border-box;
 
 }
+
 :root {
   --color-palido: #F0EBD8;
   --color-oscuro: #172726;
@@ -22,66 +23,73 @@
   --color-rose: #E7A9AE;
 
 }
+
 .container {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .slogan {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: var(--color-verde);
-
+  background-image: url(../img/ruido.png);
 }
 
 .conversation {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: var(--color-rose);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
+  background-image: url(../img/ruido.png);
 }
 
 .meet {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: var(--color-verde);
+  background-image: url(../img/ruido.png);
 }
 
 /* STAR */
 .startup {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: var(--color-rose);
+  background-image: url(../img/ruido.png);
 }
 
+/* Podcast */
+.podcast {
+  height: 300vh;
+  width: 100vw;
+  background-color: var(--color-verde);
+  background-image: url(../img/ruido.png);
+}
 
 /* TESTIMONIALS */
 
 .testimonials {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: var(--color-rose);
-
+  background-image: url(../img/ruido.png);
 }
 
 /* JOIN */
 .join {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: var(--color-verde);
+  background-image: url(../img/ruido.png);
 }
 
 /* COPYRIGHT */
 .copyright {
-  height: 50vh;
-  width: 100%;
+  height: 45vh;
+  width: 100vw;
   background-color: var(--color-rose);
+  background-image: url(../img/ruido.png);
 }
-
-
-

@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  background-image: url(../img/ruido.png);
 }
 
 .meet__imagen {
@@ -65,91 +64,4 @@
   margin-left: 600px;
   height: 300px;
   width: 300px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-  .meet__imagen {
-    height: 600px;
-    width: 600px;
-  }
-
-  .meet__parrafo {
-    padding: 150px;
-  }
-
-  .meet__titulo {
-    font-size: 120px;
-  }
-
-  .meet__texto {
-    font-size: 18px;
-    width: 600px;
-  }
-
-  .meet__pinchos--bajos {
-    margin-top: 500px;
-    margin-left: 400px;
-    height: 250px;
-    width: 250px;
-  }
-}
-
-@media (max-width: 768px) {
-  .meet {
-    grid-template-columns: 1fr;
-  }
-
-  .meet__imagen {
-    height: 400px;
-    width: 400px;
-    grid-column: 1 / 1;
-  }
-
-  .meet__parrafo {
-    padding: 50px;
-    padding-top: 0;
-    grid-column: 1 / 1;
-  }
-
-  .meet__titulo {
-    font-size: 80px;
-    line-height: 100px;
-    text-align: center;
-  }
-
-  .meet__texto {
-    font-size: 16px;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .meet__boton {
-    display: block;
-    margin: 20px auto;
-  }
-
-  .meet__pinchos {
-    display: none; /* Oculta en pantallas más pequeñas */
-  }
-
-  .meet__pinchos--bajos {
-    display: none; /* Oculta en pantallas más pequeñas */
-  }
-}
-
-@media (max-width: 480px) {
-  .meet__titulo {
-    font-size: 60px;
-  }
-
-  .meet__texto {
-    font-size: 14px;
-  }
-
-  .meet__boton {
-    font-size: 16px;
-    padding: 8px;
-  }
 }

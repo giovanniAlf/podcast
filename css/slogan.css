@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 2fr;
   grid-template-rows: 100px 1fr;
-  background-image: url(../img/ruido.png);
 }
 
 /* Estilo para el ícono de hamburguesa */
@@ -178,92 +177,4 @@
   grid-column: 1 / 3;
   margin-top: -100px;
   margin-left: 150px;
-}
-
-/* Media Queries para Responsividad */
-@media (max-width: 1024px) {
-  .slogan__titulo {
-    font-size: 120px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-
-  .slogan__texto {
-    font-size: 16px;
-  }
-
-  .slogan__numeros {
-    font-size: 50px;
-    margin-right: 50px;
-  }
-
-  .slogan__botones {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .slogan__burger, .slogan__search {
-    font-size: 30px;
-  }
-
-  .slogan__microfono {
-    flex-direction: column;
-  }
-
-  .slogan__pincho {
-    margin-left: 200px;
-  }
-
-  .slogan__imagenes {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .slogan {
-    padding: 20px; /* Añadir padding para móviles */
-    grid-template-columns: 1fr;
-  }
-
-  .slogan__titulo {
-    font-size: 80px;
-  }
-
-  .slogan__texto {
-    font-size: 14px;
-  }
-
-  .slogan__numeros {
-    font-size: 40px;
-  }
-
-  .slogan__botones {
-    flex-direction: column;
-  }
-
-  .slogan__pincho {
-    margin-left: 0;
-  }
-
-  .slogan__circulo {
-    width: 500px;
-    height: 500px;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .slogan__titulo {
-    font-size: 60px;
-    margin-top: 30px;
-  }
-
-  .slogan__texto {
-    font-size: 12px;
-  }
-
-  .slogan__numeros {
-    font-size: 30px;
-  }
 }
