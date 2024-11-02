@@ -70,28 +70,42 @@
   gap: 20px;
 }
 
-.slogan__presionar {
+.slogan__presionar--rosa {
   font-weight: bold;
   color: var(--color-oscuro);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   background-color: var(--color-rose);
   padding: 10px;
   border-radius: 50px;
-  border: 3px solid var(--color-oscuro);
+  border: 5px solid var(--color-oscuro);
+  transition: 0.5s;
+}
+.slogan__presionar--rosa:hover{
+  background-color: var(--color-oscuro);
+  border: 5px solid var(--color-rose);
+  color:var(--color-rose);
+  box-shadow: 10px 10px 0px 5px var(--color-rose);
 }
 
 .slogan__presionar--verde {
   font-weight: bold;
   color: var(--color-oscuro);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   background-color: var(--color-verde);
   padding: 10px;
   border-radius: 50px;
-  border: 3px solid var(--color-oscuro);
+  border: 5px solid var(--color-oscuro);
+  transition: 0.5s;
+}
+.slogan__presionar--verde:hover{
+  background-color: var(--color-oscuro);
+  border: 5px solid var(--color-palido);
+  color:var(--color-palido);
+  box-shadow: 10px 10px 0px 5px var(--color-palido);
 }
 
 .slogan__down {
