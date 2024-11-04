@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url(menu.css);
 @import url(slogan.css);
 @import url(meet.css);
 @import url(podcast.css);
@@ -31,9 +32,14 @@ html{
   overflow-y: hidden;
   overflow-x: hidden;
 }
-
+.space{
+  height: 100px;
+  width: 100vw;
+  background-color: var(--color-verde);
+  background-image: url(../img/ruido.png);
+}
 .slogan {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background-color: var(--color-verde);
   background-image: url(../img/ruido.png);

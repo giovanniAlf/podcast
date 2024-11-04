@@ -1,7 +1,3 @@
-.conversation {
-  position: relative;
-}
-
 .conversation__title {
   display: flex;
   align-items: center;
@@ -34,11 +30,10 @@
 }
 
 .conversation__parrafo {
-  font-size: 15px;
+  font-size: 25px;
   max-width: 600px;
   text-align: center;
   color: var(--color-oscuro);
-  line-height: 1.6;
 }
 
 .conversation__star {
@@ -51,26 +46,6 @@
 
 .conversation__circle-text-left img {
   width: 320px;
-}
-
-.conversation__line-left {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  opacity: 0.8;
-  padding-top: 60px;
-  padding-left: 100px;
-  width: 350px;
-}
-
-.conversation__line-right {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 420px;
-  opacity: 0.8;
-  padding-bottom: 100px;
-  padding-right: 200px;
 }
 
 /* Línea superior izquierda */
