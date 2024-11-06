@@ -6,17 +6,40 @@
     width: 100vw;
     background-color: var(--color-verde);
     background-image: url(../img/ruido.png);
-    position:fixed;
   }
 .menu__boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-palido);
     text-decoration: none;
     margin-bottom: 20px;
     padding: 10px;
-    border-radius: 100px;
+    border-radius: 50%;
     transition: 0.5s;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
   }
 .menu__boton:hover{
+    color: var(--color-verde);
+    background-color: var(--color-palido);
+  }
+  .menu__boton--burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-palido);
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+  }
+.menu__boton--burger:hover{
     color: var(--color-verde);
     background-color: var(--color-palido);
   }
@@ -28,6 +51,7 @@
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     margin-left: 150px;
+    position: relative;
   }
   .menu__microfono {
     display: flex;
@@ -47,5 +71,41 @@
     grid-row: 1 / 2;
     grid-column: 3 / 5;
     margin-left: 160px;
-    
+  }
+  .menu__submenu{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 1000px;
+    border: 5px solid var(--palido);
+    transition: 0.5s;
+  }
+  .menu__transporte{
+    background-color: var(--color-oscuro);
+    background-image: url(../img/ruido.png);
+    text-align: center;
+    color: var(--color-palido);
+    border: 3px solid var(--color-palido);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .menu__transporte:hover{
+    background-color: var(--color-palido);
+    color: var(--color-verde);
+  }
+  #menu__spawn_menu:checked + .menu__boton--burger 
+  {
+    rotate: 90deg;
+  }
+  #menu__spawn_menu{
+    display: none;
+  }
+  .input__spawn:checked ~ .menu__submenu
+  {
+    margin-bottom: -280px;
   }

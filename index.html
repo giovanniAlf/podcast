@@ -17,20 +17,36 @@
 
 <body>
   <div class="container">
+
     <header class="menu">
         <div class="menu__burger">
-          <a href="#" class="ri-menu-line menu__boton"></a>
+          <input type="checkbox" id="menu__spawn_menu" class="input__spawn">
+          <label class="menu__boton--burger" for="menu__spawn_menu">
+            <i class="ri-menu-line"></i>
+          </label>
+          <label for="menu__spawn_menu" class="menu__submenu">
+            <a href="#conversation" class="menu__transporte">Conversation</a>
+            <a href="#meet" class="menu__transporte">Host</a>
+            <a href="#startup" class="menu__transporte">Start-up</a>
+            <a href="#podcast" class="menu__transporte">Podcast</a>
+            <a href="#testimonials" class="menu__transporte">Tertimonials</a>
+            <a href="#join" class="menu__transporte">Join our</a>
+            <a href="#copyright" class="menu__transporte">Copyright</a>
+          </label>
+
         </div>
         <div class="menu__microfono">
           <img src="img/slogan/mic.png" alt="" />
         </div>
         <div class="menu__search">
-          <a href="#" class="ri-search-line menu__boton"></a>
-          <a href="#" class="ri-shopping-bag-line menu__boton"></a>
+          <i href="#" class="ri-search-line menu__boton"></i>
+          <i href="#" class="ri-shopping-bag-line menu__boton"></i>
         </div>
     </header>
-    <div class="space"></div>
-    <div class="slogan">
+
+    <section class="space"></section>
+
+    <section class="slogan">
       <div class="slogan__parrafo">
         <div class="slogan__titulo">
           no one's
@@ -63,13 +79,12 @@
         <img src="img/slogan/Ruediña.png" class="slogan__bordeado" />
         <img src="img/slogan/japonesita.png" class="slogan__chica" />
       </div>
-    </div>
-    <!-- conversation -->
-    <div class="conversation">
+    </section>
+
+    <section class="conversation" id="conversation">
       <div class="conversation__title">
         <h2 class="conversation__title-whatwedo">WHAT WE DO</h2>
       </div>
-
       <div class="conversation__central-text">
         <h1 class="conversation__main-text">made of fun</h1>
         <h1 class="conversation__sub-text">conversations</h1>
@@ -79,7 +94,6 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate recusandae culpa fuga molestiae.
         </p>
       </div>
-
       <div class="conversation__star">
         <img src="img/conversation/Shape.png" alt="estrella.png">
       </div>
@@ -87,11 +101,9 @@
       <div class="conversation__circle-text-left">
         <img src="img/conversation/WhatsApp_Image_2024-10-26_at_11.11.19-removebg-preview.png" alt="Heading.png">
       </div>
-    </div>
+    </section>
 
-    <!-- MEET -->
-
-    <div class="meet">
+    <section class="meet" id="meet">
       <div class="meet__imagen">
         <img src="img/meet/rueda.png" alt="" />
       </div>
@@ -107,10 +119,9 @@
       </div>
       <img src="img/meet/estrellita.png" class="meet__pinchos" />
       <img src="img/meet/estrellita.png" class="meet__pinchos--bajos" />
-    </div>
+    </section>
 
-    <!-- STARUP -->
-    <div class="startup">
+    <section class="startup" id="startup">
         <div class="startup__content">
           <h1 class="startup__title">start-up
             <p>podcast</h1>
@@ -133,10 +144,9 @@
               <img src="img/startup/Place Your Image Here (Double Click to Edit).png" alt="" >
             </div> 
         </div>
-    </div>
+    </section>
 
-    <!-- PODCAST -->
-    <div class="podcast">
+    <section class="podcast" id="podcast">
       <div class="podcast__titulo">Podcast</div>
       <div class="podcast__contenedor_circulo">
         <img src="img/podcast/Heading.png" class="podcast__circulito" />
@@ -198,10 +208,9 @@
       <img src="img/podcast/estrellita_podcast.png" class="podcast__pincho_arriba" />
       <img src="img/podcast/estrellita_podcast.png" class="podcast__pincho_medio" />
       <img src="img/podcast/estrellita_podcast.png" class="podcast__pincho_abajo" />
-    </div>
+    </section>
 
-    <!-- TESTIMONIALS -->
-    <div class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="testimonials__container">
         <div class="testimonials__content">
           <h1 class="testimonials__title">testimonials</h1>
@@ -233,11 +242,9 @@
       <div class="testimonials__derecha">
         <img src="img/testimonials/Elipse.png" alt="">
       </div>
-    </div>
+    </section>
 
-    <!-- JOIN -->
-
-    <div class="join">
+    <section class="join" id="join">
       <div class="join__contenedor_izquierda">
         <div class="join__title-lorem">LOREM IPSUM DOLOR SIT AMET.</div>
         <div class="join__title">
@@ -260,11 +267,9 @@
         </div>
         <img src="img/join/estrella_media-luna.png" alt="" class="join__star">
       </div>
-    </div>
+    </section>
 
-    <!-- COPYRIGTH -->
-
-    <div class="copyright">
+    <section class="copyright" id="copyright">
       <div class="copyright__container">
         <div class="copyright__section">
           <h1 class="copyright__title">OUR BRAND</h1>
@@ -301,7 +306,7 @@
       <div>
         <h1 class="copy " id="copyright">Copyright 2021 Known Voices All Rights Reserved.</h1>
       </div>
-    </div>
+    </section>
   </div>
 </body>
 
