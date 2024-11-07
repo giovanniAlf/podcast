@@ -72,16 +72,16 @@
 
 @media (max-width: 700px) {
   .conversation__main-text {
-    font-size: 80px;
+    font-size: 7vh;
   }
 
   .conversation__sub-text {
-    font-size: 70px;
+    font-size: 5vh;
   }
 
   .conversation__parrafo {
-    margin-top: 30px;
-    font-size: 200%;
+    margin-top: 10vw;
+    font-size: 180%;
   }
 
   .conversation__central-text {

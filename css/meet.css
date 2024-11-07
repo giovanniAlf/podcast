@@ -72,3 +72,27 @@
   height: 300px;
   width: 300px;
 }
+@media (max-width: 700px) {
+  .meet {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100vh 1fr 1fr;
+    } 
+
+    .meet__imagen {
+      display: flex;
+      margin: auto;
+      height: 400px;
+      width: 700px;
+      grid-row: 1 / 4;
+      grid-column: 1 / 2;
+      margin-top: 50vh;
+    }
+    .meet__parrafo{
+
+
+      font-size: -4vh;
+
+
+    }
+  }    

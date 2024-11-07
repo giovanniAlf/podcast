@@ -92,3 +92,45 @@
         align-items: center;
         justify-content: end;
 }
+
+@media (max-width: 700px) {
+  .join {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100vh 1fr 1fr;
+    }
+
+    .join__title-lorem{
+
+      font-size: 2vh;
+      margin-left: -14vh;
+
+    }
+    .join__title{
+
+      font-size: 16vw;
+      justify-items: center;
+      margin-left: -11vh;
+    }
+    .join__contenedor_izquierda{
+    align-content: flex-start;
+     align-items: center;
+
+    }
+    .join__title p{
+
+      margin-left: 5vh;
+
+    }
+    .join__email{
+
+      margin-left: -9vh;
+
+
+    }
+    .join__submit{
+
+      margin-left: -11vh
+
+    }
+  }

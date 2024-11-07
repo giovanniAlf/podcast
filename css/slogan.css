@@ -189,6 +189,15 @@
     .slogan__decoracion{
          grid-row: 1 ;
          grid-column: 1;
+     
+        }
+        .slogan__texto{
+          margin-left: 2vh;
+
+        }
+        .slogan__titulo{
+
+          margin-left: 5vh;
         }
         .slogan__chica {
         grid-row: 1;
@@ -196,6 +205,38 @@
         }
         .slogan__bordeado{
           grid-row: 1;
-            grid-column: 1;
+          grid-column: 1;
+          display: none;
         }
- }
+        .slogan__circulo{
+
+          display: none;
+
+  
+        }
+        .menu__burger{
+
+          
+          margin-left: -1vw;
+         
+
+        }
+        .menu__microfono {
+     
+          margin-top: 2vh;          
+          margin-left: -7vh;
+          display: inline;
+      }
+      .menu__search{
+
+        margin-bottom: 1vh;
+
+
+      }
+    
+        }
+       
+
+
+        
+ 
