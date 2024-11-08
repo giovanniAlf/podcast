@@ -123,3 +123,47 @@
   text-transform: uppercase;
   font-weight: bold;
 }
+@media (max-width: 700px) {
+  
+.podcast__pincho_arriba { display: none; }
+.podcast__pincho_medio { display: none;  }
+.podcast__pincho_abajo { display: none;  }
+.podcast__portada_arriba { display: none; }
+.podcast__portada_medio { display: none;  }
+.podcast__portada_abajo { display: none;  }
+.podcast {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+.podcast__parrafo_arriba {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+.podcast__parrafo_medio {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  padding-left:0px;
+}
+.podcast__parrafo_abajo {
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+}
+.podcast__titulo {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  font-size: 100px;
+  margin: auto 0;
+  margin-left: 30px;
+}
+.podcast__contenedor_circulo
+{
+    display:none;
+}
+.podcast__host {
+  font-size: 20px;
+  color: var(--color-palido);
+  font-weight: bold;
+}
+
+}
