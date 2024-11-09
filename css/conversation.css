@@ -82,6 +82,7 @@
   .conversation__parrafo {
     margin-top: 10vw;
     font-size: 180%;
+    padding: 3vh;
   }
 
   .conversation__central-text {

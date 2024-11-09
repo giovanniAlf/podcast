@@ -45,21 +45,24 @@
       .copyright__container {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      font-size: 10px;
+      /* align-items: center; */
+      font-size: 1.5vh;
+      margin-left: 3vh;
     }
         .copyright__title {
           top: 0;
-          font-size: 20px;
+          font-size: 1.7vh;
         }
                     .copyright__text {
           
                       top: 0;
                     }
                     .copy{
-                      top: 0;
+                      top: 2vh;
                       right: 0;
-                      font-size: 30px;
+                      font-size: 1.6vh;
+                      margin-left: 4vh;
+                      max-width: 300px;
                     }
                     .copyright__section{
                       width: 50vw;

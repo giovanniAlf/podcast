@@ -155,10 +155,20 @@
   .slogan__titulo{
     font-size: 50px;
     line-height: 50px;
-    margin: 10px;
+    margin: -25px;
+    padding: 2vh;
+    position: relative;
+    left: -4vh;
+    bottom: 3vh;
+   
   }
   .slogan__texto{
-    width: 200%;
+    width: 130%;
+    padding: 1vh;
+    z-index: 2;
+    
+ 
+   
   }
     .slogan__imagenes{
       grid-row: 3 / 4;
@@ -166,10 +176,12 @@
         /* background-color: red; */
         grid-template-columns: 1fr;
           grid-template-rows: 1fr;
+          z-index: 1;
     }
     .slogan__botones {
           margin: 20px 0;
           gap: 20px;
+          padding: 2vh;
         }
         .slogan__presionar {
         font-size: 12px;
@@ -179,6 +191,7 @@
         }
     .slogan__down{
           margin-top: 0px;
+          padding: 2vh;
         }
     .slogan__numeros {
     display: none;
