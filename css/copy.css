@@ -37,34 +37,78 @@
     font-size: 40px;
     letter-spacing: 4px;
     font-family: 'DM Sans';
-  
-  
   }
+
+  
+  
     @media (max-width: 700px) 
     {
       .copyright__container {
       display: flex;
-      flex-direction: column;
+      /* flex-direction: column; */
       /* align-items: center; */
-      font-size: 1.5vh;
-      margin-left: 3vh;
+      font-size: 1.7vh;
+      /* margin-left: 3vh; */
+      display: flex;
+   
+      justify-content: end;
+   
     }
         .copyright__title {
-          top: 0;
-          font-size: 1.7vh;
+          top: 4;
+          font-size: 2.5vh;
         }
                     .copyright__text {
           
-                      top: 0;
+                      top: 4;
+                      font-size: 1.5vh;
+                      
+                  
                     }
                     .copy{
-                      top: 2vh;
-                      right: 0;
-                      font-size: 1.6vh;
-                      margin-left: 4vh;
-                      max-width: 300px;
+                   display: none;
                     }
                     .copyright__section{
-                      width: 50vw;
+                      width: 80vw;
                     }
+                    .copyright__section:nth-child(1){
+
+                  
+                      position: relative;
+                      bottom:  7vh;
+                      left: 8vh;
+
+                 
+                   }
+                   .copyright__section:nth-child(2){
+                 
+                 
+              
+                    position: relative;
+                    top: 13vh;
+                    right:4vh;
+                  }
+                  
+                  .copyright__section:nth-child(3){
+                 
+                      
+                
+                    top: 13vh;
+                    right: -2vh;
+                    position: relative;
+                   
+                 }
+                 
+                 .copyright__section:nth-child(4){
+                 
+               
+                  bottom: 6vh;
+                  right: 9vh;
+                  justify-items: start;
+                  position: relative;
+
+                   
+                 }
+                 
     }
+  
