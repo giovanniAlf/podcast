@@ -32,30 +32,11 @@
   font-family: 'DM Sans';
   line-height: 120px;
 }
-.startup__button-listennow{
-  margin: 0 auto;
-  width: 150px;
-  text-align: center;
-  font-weight: bold;
-  color: var(--color-oscuro);
-  text-decoration: none;
-  font-size: 16px;
-  text-transform: uppercase;
-  background-color: var(--color-rose);
-  padding: 10px;
-  border-radius: 50px;
-  border: 5px solid var(--color-oscuro);
-  transition: 0.5s;
+.startup__container_boton{
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
 }
-
-.startup__button-listennow:hover{
-  background-color: var(--color-oscuro);
-  border: 5px solid var(--color-palido);
-  color:var(--color-palido);
-  box-shadow: 10px 10px 0px 5px var(--color-palido);
-}
-
 .startup__image-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

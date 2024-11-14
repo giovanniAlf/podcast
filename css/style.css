@@ -9,6 +9,7 @@
 @import url(join.css);
 @import url(copy.css);
 @import url(querys.css);
+@import url(componentes.css);
 
 * {
   margin: 0px;
@@ -26,6 +27,7 @@
 html{
   scroll-behavior: smooth;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -38,11 +40,15 @@ html{
   background-color: var(--color-verde);
   background-image: url(../img/ruido.png);
 }
+.menu{
+  z-index: 2;
+}
 .slogan {
   height: 90vh;
   width: 100vw;
   background-color: var(--color-verde);
   background-image: url(../img/ruido.png);
+  z-index: 1;
 }
 
 .conversation {
@@ -53,6 +59,7 @@ html{
   justify-content: start;
   flex-direction: column;
   background-image: url(../img/ruido.png);
+  z-index: 3;
 }
 
 .meet {

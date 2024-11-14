@@ -1,0 +1,55 @@
+.boton {  /* Estilos para el botón general */
+    font-weight: bold; /* Hace el texto del botón en negrita */
+    color: var(--color-oscuro); /* Define el color del texto usando una variable de color */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    font-size: 20px; /* Establece el tamaño de la fuente a 20 píxeles */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    background-color: var(--color-rose); /* Define el color de fondo usando una variable de color */
+    padding: 20px; /* Agrega espacio interno de 20 píxeles alrededor del texto */
+    border-radius: 50px; /* Redondea las esquinas del botón */
+    border: 7px solid var(--color-oscuro); /* Agrega un borde sólido de 7 píxeles usando una variable de color */
+    transition: 0.5s; /* Agrega una transición suave de 0.5 segundos para los cambios de estilo */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.boton:hover { /* Estilos cuando el botón es interactuado con el puntero */
+    background-color: var(--color-oscuro); /* Cambia el color de fondo usando una variable */
+    border: 7px solid var(--color-rose); /* Cambia el color del borde usando una variable */
+    color: var(--color-rose); /* Cambia el color del texto usando una variable */
+    box-shadow: 10px 10px 0px 5px var(--color-rose); /* Agrega una sombra alrededor del botón */
+}
+
+.boton--verde { /* Estilos para el botón con clase modificadora 'verde' */
+    background-color: var(--color-verde); /* Define el color de fondo usando una variable */
+}
+
+.boton--verde:hover { /* Estilos para el botón verde cuando es interactuado */
+    border: 7px solid var(--color-palido); /* Cambia el color del borde usando una variable */
+    color: var(--color-palido); /* Cambia el color del texto usando una variable */
+    box-shadow: 10px 10px 0px 5px var(--color-palido); /* Agrega una sombra alrededor del botón */
+}
+
+.boton--rosablanco { /* Estilos para el botón con clase modificadora 'rosablanco' */
+    background-color: var(--color-rose); /* Define el color de fondo usando una variable */
+}
+
+.boton--rosablanco:hover { /* Estilos para el botón rosablanco cuando es interactuado */
+    border: 7px solid var(--color-palido); /* Cambia el color del borde usando una variable */
+    color: var(--color-palido); /* Cambia el color del texto usando una variable */
+    box-shadow: 10px 10px 0px 5px var(--color-palido); /* Agrega una sombra alrededor del botón */
+}
+
+.titulo { /* Estilos para el título principal */
+    font-size: 180px; /* Define el tamaño de la fuente a 180 píxeles */
+    line-height: 150px; /* Establece la altura de línea para ajustar el espaciado vertical */
+    font-weight: bold; /* Hace el texto en negrita */
+    color: var(--color-palido); /* Define el color del texto usando una variable */
+    margin: 30px; /* Agrega un margen de 30 píxeles alrededor del título */
+}
+
+.parrafo { /* Estilos para los párrafos de texto */
+    color: var(--color-oscuro); /* Define el color del texto usando una variable */
+    font-size: 24px; /* Establece el tamaño de la fuente a 24 píxeles */
+    font-weight: bold; /* Hace el texto en negrita */
+    width: 90%; /* Establece el ancho del párrafo al 90% del contenedor */
+}
