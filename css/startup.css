@@ -1,89 +1,97 @@
-/* Startup */
-.startup{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  color: var(--color-palido);
-  font-family: 'DM Sans';
+/* Estilo general para la sección startup */
+.startup {
+  display: grid; /* Configura un diseño de cuadrícula */
+  grid-template-columns: 1fr 1fr; /* Define dos columnas iguales */
+  grid-template-rows: 1fr; /* Define una sola fila */
+  color: var(--color-palido); /* Aplica un color definido en una variable */
+  font-family: 'DM Sans'; /* Establece la fuente para los textos */
 }
 
+/* Estilo para el contenido de la sección startup */
 .startup__content {
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
+  padding: 100px; /* Añade un espacio interno de 100px alrededor */
+  display: flex; /* Configura un diseño flexible */
+  flex-direction: column; /* Organiza los elementos en una columna */
 }
 
+/* Estilo para los párrafos dentro de startup */
 .startup__paragraph {
-  font-size: 20px;
-  padding-top: 50px;
-  max-width: 800px;
-  color: var(--color-oscuro);
-  line-height: 1.6;
-  padding-left: 150px;
-  text-align: justify;
-  font-weight: bold;
+  font-size: 20px; /* Define un tamaño de fuente de 20px */
+  padding-top: 50px; /* Añade espacio superior de 50px */
+  max-width: 800px; /* Limita el ancho máximo del párrafo a 800px */
+  color: var(--color-oscuro); /* Aplica un color definido en una variable */
+  line-height: 1.6; /* Establece la altura de las líneas */
+  padding-left: 150px; /* Añade un espacio a la izquierda de 150px */
+  text-align: justify; /* Justifica el texto */
+  font-weight: bold; /* Aplica negrita al texto */
 }
 
-.startup__title{
-  font-size: 135px;
-  padding-left: 150px;
-  letter-spacing: 10px;
-  color: var(--color-palido);
-  font-family: 'DM Sans';
-  line-height: 120px;
+/* Estilo para los títulos dentro de startup */
+.startup__title {
+  font-size: 135px; /* Define un tamaño de fuente muy grande (135px) */
+  padding-left: 150px; /* Añade un espacio a la izquierda de 150px */
+  letter-spacing: 10px; /* Establece un espaciado entre letras de 10px */
+  color: var(--color-palido); /* Aplica un color definido en una variable */
+  font-family: 'DM Sans'; /* Establece la fuente para el título */
+  line-height: 120px; /* Configura la altura de línea */
 }
-.startup__container_boton{
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+
+/* Estilo para el contenedor de botones dentro de startup */
+.startup__container_boton {
+  display: flex; /* Configura un diseño flexible */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  margin-top: 30px; /* Añade un espacio superior de 30px */
 }
+
+/* Estilo para el contenedor de imágenes */
 .startup__image-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: grid; /* Configura un diseño de cuadrícula */
+  grid-template-columns: 1fr 1fr; /* Define dos columnas iguales */
+  grid-template-rows: 1fr; /* Define una sola fila */
 }
-.startup__main-image{
-  grid-row: 1 / 1;
-  grid-column: 2 / 3;
-  display: flex;
-  justify-content: end;
+
+/* Estilo para la imagen principal */
+.startup__main-image {
+  grid-row: 1 / 1; /* Ocupa la primera fila */
+  grid-column: 2 / 3; /* Ocupa la segunda columna */
+  display: flex; /* Configura un diseño flexible */
+  justify-content: end; /* Alinea los elementos al final horizontalmente */
 }
+
+/* Estilo para la imagen VR (realidad virtual) */
 .startup__vr-image {
-  grid-row: 1 / 1;
-  grid-column: 2 / 3;
-  display: flex;
-  align-items: end;
-}
-.startup__firmas{
-  display: flex;
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
+  grid-row: 1 / 1; /* Ocupa la primera fila */
+  grid-column: 2 / 3; /* Ocupa la segunda columna */
+  display: flex; /* Configura un diseño flexible */
+  align-items: end; /* Alinea los elementos al final verticalmente */
 }
 
+/* Estilo para las firmas */
+.startup__firmas {
+  display: flex; /* Configura un diseño flexible */
+  grid-row: 1 / 1; /* Ocupa la primera fila */
+  grid-column: 1 / 1; /* Ocupa la primera columna */
+}
 
+/* Estilos para pantallas con un ancho máximo de 700px */
 @media (max-width: 700px) {
-  /* Ajustes para pantallas con un ancho máximo de 700px */
-  
   .startup {
-      display: grid; /* Cambia el diseño del contenedor a una cuadrícula */
-      grid-template-columns: 1fr 1fr 1fr; /* Define tres columnas iguales */
-      grid-template-rows: 100vh 1fr 1fr; /* La primera fila ocupa toda la altura de la ventana, las siguientes son proporcionales */
+    display: grid; /* Configura un diseño de cuadrícula */
+    grid-template-columns: 1fr 1fr 1fr; /* Define tres columnas iguales */
+    grid-template-rows: 100vh 1fr 1fr; /* La primera fila ocupa toda la altura de la ventana */
   }
 
   .startup__title {
-      /* Estilos para el título en la sección startup */
-      font-size: 7vh; /* Tamaño de fuente grande relativo a la altura de la ventana */
-      margin-left: -20vh; /* Mueve el título hacia la izquierda en 20vh */
-      margin-top: -10vh; /* Mueve el título hacia arriba en 10vh */
+    font-size: 7vh; /* Ajusta el tamaño de fuente relativo a la altura de la ventana */
+    margin-left: -20vh; /* Desplaza el título hacia la izquierda */
+    margin-top: -10vh; /* Desplaza el título hacia arriba */
   }
 
   .startup__paragraph {
-      /* Estilos para el párrafo en la sección startup */
-      margin-left: -20vh; /* Mueve el párrafo hacia la izquierda en 20vh */
+    margin-left: -20vh; /* Desplaza el párrafo hacia la izquierda */
   }
 
   .startup__button-listennow {
-      /* Estilos para el botón de acción 'Listen Now' */
-      margin-right: 10vh; /* Añade un margen a la derecha para ajustar su posición */
+    margin-right: 10vh; /* Añade un margen derecho al botón */
   }
 }

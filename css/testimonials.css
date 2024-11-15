@@ -1,123 +1,134 @@
-.testimonials{
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr;
+/* Contenedor principal para la sección de testimonios */
+.testimonials {
+  display: grid; /* Configura un diseño de cuadrícula */
+  grid-template-columns: 1fr 5fr 1fr; /* Define tres columnas: estrecha, amplia, estrecha */
+  grid-template-rows: 1fr; /* Define una sola fila */
 }
-.testimonials__container{
-    grid-row: 1 / 1;
-    grid-column: 2 / 3;
+
+/* Contenedor central dentro de la cuadrícula */
+.testimonials__container {
+  grid-row: 1 / 1; /* Ocupa la primera fila */
+  grid-column: 2 / 3; /* Ocupa la segunda columna */
 }
-.testimonials__izquierda{
-  display: flex;
-  align-items: center;
+
+/* Sección izquierda de los testimonios */
+.testimonials__izquierda {
+  display: flex; /* Configura un diseño flexible */
+  align-items: center; /* Centra los elementos verticalmente */
 }
-.testimonials__derecha{
-  display: flex;
-align-items: center;
+
+/* Sección derecha de los testimonios */
+.testimonials__derecha {
+  display: flex; /* Configura un diseño flexible */
+  align-items: center; /* Centra los elementos verticalmente */
 }
+
+/* Estilo del título en la sección de testimonios */
 .testimonials__title {
-  padding-top: 150px;
-  text-align: center;
-  font-size: 200px;
-  font-family: 'DM Sans';
-  color: var(--color-palido);
-  letter-spacing: 10px;
+  padding-top: 150px; /* Añade espacio superior de 150px */
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 200px; /* Define un tamaño de fuente muy grande */
+  font-family: 'DM Sans'; /* Usa la fuente específica 'DM Sans' */
+  color: var(--color-palido); /* Aplica un color definido en una variable */
+  letter-spacing: 10px; /* Establece un espaciado entre letras de 10px */
 }
 
+/* Estilo para los párrafos principales en la sección de testimonios */
 .testimonials__paragraph {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 40px;
-  font-weight: bold;
+  text-align: center; /* Centra el texto horizontalmente */
+  max-width: 800px; /* Limita el ancho máximo del párrafo a 800px */
+  margin: 0 auto; /* Centra el párrafo automáticamente */
+  padding-top: 40px; /* Añade un espacio superior de 40px */
+  font-weight: bold; /* Aplica negrita al texto */
 }
 
+/* Estilo para los párrafos secundarios */
 .testimonials__paragraph--down {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 800px;
-  padding-top: 20px;
-  font-weight: bold;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 0 auto; /* Centra el párrafo automáticamente */
+  max-width: 800px; /* Limita el ancho máximo del párrafo a 800px */
+  padding-top: 20px; /* Añade un espacio superior de 20px */
+  font-weight: bold; /* Aplica negrita al texto */
 }
 
+/* Estilo para el separador visual */
 .testimonials__separador {
-  margin: 0 auto;
-  width: 60px;
-  color: red;
-  height: 3px;
-  background-color: var(--color-palido);
-  top: 50px;
-  position: relative;
-  left: 20px;
+  margin: 0 auto; /* Centra el separador automáticamente */
+  width: 60px; /* Define un ancho de 60px */
+  color: red; /* Aplica un color rojo */
+  height: 3px; /* Define un grosor de 3px */
+  background-color: var(--color-palido); /* Usa un color definido en una variable */
+  top: 50px; /* Desplaza el separador hacia abajo 50px */
+  position: relative; /* Posición relativa al contenedor */
+  left: 20px; /* Desplaza el separador 20px hacia la derecha */
 }
 
+/* Estilo para el nombre del autor en los testimonios */
 .testimonials__author-name {
-  position: relative;
-  top: 80px;
-  margin: 0 auto;
-  font-family: 'DM Sans';
-  color: var(--color-palido);
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  display: flex;
-  justify-content: center;
+  position: relative; /* Posición relativa al contenedor */
+  top: 80px; /* Desplaza el texto hacia abajo 80px */
+  margin: 0 auto; /* Centra el texto automáticamente */
+  font-family: 'DM Sans'; /* Usa la fuente específica 'DM Sans' */
+  color: var(--color-palido); /* Aplica un color definido en una variable */
+  font-size: 40px; /* Define un tamaño de fuente de 40px */
+  font-weight: bold; /* Aplica negrita al texto */
+  letter-spacing: 3px; /* Establece un espaciado entre letras de 3px */
+  display: flex; /* Configura un diseño flexible */
+  justify-content: center; /* Centra el texto horizontalmente */
 }
 
+/* Estilo para las imágenes dentro de los testimonios */
 .testimonials__images {
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  bottom: 600px;
+  flex: 1; /* Permite que la imagen ocupe todo el espacio disponible */
+  position: relative; /* Posición relativa al contenedor */
+  display: flex; /* Configura un diseño flexible */
+  justify-content: end; /* Alinea las imágenes al final horizontalmente */
+  align-items: end; /* Alinea las imágenes al final verticalmente */
+  bottom: 600px; /* Desplaza el contenedor hacia arriba 600px */
 }
 
+/* Estilo para la imagen de la derecha */
 .testimonials__image-right {
-  position: relative;
-  width: 400px;
-  height: 800px;
-  bottom: 20px;
+  position: relative; /* Posición relativa al contenedor */
+  width: 400px; /* Define un ancho de 400px */
+  height: 800px; /* Define una altura de 800px */
+  bottom: 20px; /* Desplaza la imagen hacia arriba 20px */
 }
 
+/* Estilo para la imagen de la izquierda */
 .testimonials__image-left {
-  position: relative;
-  width: 400px;
-  height: 900px;
-  right: 100px;
-  bottom: 1450px;
+  position: relative; /* Posición relativa al contenedor */
+  width: 400px; /* Define un ancho de 400px */
+  height: 900px; /* Define una altura de 900px */
+  right: 100px; /* Desplaza la imagen 100px hacia la derecha */
+  bottom: 1450px; /* Desplaza la imagen hacia arriba 1450px */
 }
+
+/* Estilos para pantallas con un ancho máximo de 700px */
 @media (max-width: 700px) {
-  /* Ajustes para pantallas con un ancho máximo de 700px */
-  
   .testimonials {
-      display: grid; /* Cambia la disposición a un diseño de cuadrícula */
-      grid-template-columns: 1fr 1fr 1fr; /* Define tres columnas iguales en la cuadrícula */
-      grid-template-rows: 100vh 1fr 1fr; /* Primera fila ocupa toda la altura de la ventana (100vh), las siguientes son proporcionales */
-  } 
-  
+    display: grid; /* Cambia a un diseño de cuadrícula */
+    grid-template-columns: 1fr 1fr 1fr; /* Define tres columnas iguales */
+    grid-template-rows: 100vh 1fr 1fr; /* La primera fila ocupa toda la altura de la ventana */
+  }
+
   .testimonials__title {
-      /* Estilos para el título dentro del bloque de testimonios */
-      font-size: 5vh; /* Tamaño de fuente grande relativo a la altura de la ventana */
+    font-size: 5vh; /* Ajusta el tamaño del título relativo a la altura de la ventana */
   }
-  
+
   .testimonials__paragraph--down {
-      /* Estilos para un párrafo ubicado "hacia abajo" */
-      font-size: 2vh; /* Tamaño de fuente pequeño relativo a la altura de la ventana */
+    font-size: 2vh; /* Reduce el tamaño de fuente del párrafo */
   }
-  
+
   .testimonials__izquierda {
-      /* Oculta el elemento en la sección izquierda de testimonios */
-      display: none; /* No se muestra en la vista */
+    display: none; /* Oculta la sección izquierda */
   }
-  
+
   .testimonials__derecha {
-      /* Oculta el elemento en la sección derecha de testimonios */
-      display: none; /* No se muestra en la vista */
+    display: none; /* Oculta la sección derecha */
   }
-  
+
   .testimonials__separador {
-      /* Ajusta los márgenes para el elemento separador */
-      margin-right: 20vh; /* Añade un margen derecho significativo para separación */
+    margin-right: 20vh; /* Añade un margen derecho amplio */
   }
 }
