@@ -43,24 +43,24 @@
 
 .menu__boton--burger {
   /* Estilo básico del botón de hamburguesa */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-palido);
-  text-decoration: none;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 50%;
-  transition: 0.5s;
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
+  display: flex; /* Hace que el elemento sea un contenedor flexible */
+  justify-content: center; /* Alinea los elementos al inicio del contenedor */
+  align-items: center; /* Alinea los elementos al final del contenedor */
+  color: var(--color-palido); /*El color de texto*/
+  text-decoration: none; /*el texto no tendra ninguna decoracion*/
+  margin-bottom: 20px; /* el espacio que sea crea para abajo*/
+  padding: 10px; /*el espacio que se crea adentro*/
+  border-radius: 50%; /*el efecto para redondearlo como una bolita*/
+  transition: 0.5s; /*duracion de transiccion para el hover*/
+  cursor: pointer; /*hace que el mouse se haga pointer al pasarlo*/
+  width: 60px; /*ancho es 60 pixeles*/
+  height: 60px; /*alto de 60 pixeles*/
 }
 
 .menu__boton--burger:hover {
   /* Al pasar el cursor sobre el botón de hamburguesa, cambia su color y fondo */
-  color: var(--color-verde);
-  background-color: var(--color-palido);
+  color: var(--color-verde);/*que el color al pasar sera verde*/
+  background-color: var(--color-palido); /*que el color del fondo sera blanco*/
 }
 
 /* Menú Hamburguesa y Submenú */
@@ -103,44 +103,44 @@
 /* Otros Elementos del Menú */
 .menu__microfono {
   /* Icono de micrófono */
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-  margin-bottom: 20px;
+  display: flex; /*Lo convierte en modelo flexible */
+  justify-content: center; /*Pone el contenido de este en el medio en coordenada X*/
+  align-items: end; /* Alinea el contenido en el medio pero en coordenada Y*/
+  grid-row: 1 / 2; /* esto significa que este tiene esa ubicacion dentro del grid el cual esta en su fila*/
+  grid-column: 2 / 3; /* esto significa que este tiene esa ubicacion dentro del grid el cual esta en su columna*/
+  margin-bottom: 20px; /* Crea un margen abajo de 20 pixeles */
 }
 
 .menu__search {
   /* Campo de búsqueda */
-  display: flex;
-  font-size: 34px;
-  justify-content: center;
-  align-items: end;
-  gap: 30px;
-  grid-row: 1 / 2;
-  grid-column: 3 / 5;
-  margin-left: 160px;
+  display: flex; /*Lo convierte en modelo flexible */
+  font-size: 34px; /*Aumenta el tamaño del texto*/
+  justify-content: center;  /*Pone el contenido de este en el medio en coordenada X*/
+  align-items: end; /* Alinea el contenido en el medio pero en coordenada Y*/
+  gap: 30px; /* este el espacio que hay entre los textos de lado*/
+  grid-row: 1 / 2; /* esto significa que este tiene esa ubicacion dentro del grid el cual esta en su fila*/
+  grid-column: 3 / 5; /* esto significa que este tiene esa ubicacion dentro del grid el cual esta en su columna*/
+  margin-left: 160px; /*Crea un margen ala izquierda de 160 pixeles*/
 }
 
 .menu__transporte {
   /* Elementos del submenú */
-  background-color: var(--color-oscuro);
-  background-image: url(../img/ruido.png);
-  text-align: center;
-  color: var(--color-palido);
-  border: 3px solid var(--color-palido);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 25px;
-  padding: 10px;
-  width: 250px;
-  cursor: pointer;
-  transition: 0.5s;
+  background-color: var(--color-oscuro); /*Coloca un fondo de color oscuro que se aplica ya que la imagen es transparente*/
+  background-image: url(../img/ruido.png); /*Coloca una imagen de fondo de los bloques*/
+  text-align: center; /*Alinea el texto ala mitad*/
+  color: var(--color-palido); /*Coloca el color del texto*/
+  border: 3px solid var(--color-palido); /*Crea un borde del bloque*/
+  text-decoration: none; /*Quita la decoracion del texto en este caso una linea de abajo porque es un link*/
+  text-transform: uppercase; /*Transforma cualquiera texto a mayuscula*/
+  font-size: 25px; /*Este define el tamaño de la letra*/
+  padding: 10px; /*Este es el espacio interno que se crea para expandirse*/
+  width: 250px; /*Esta es la anchura del bloque*/
+  cursor: pointer; /*Esto indica que cuando este el mouse por encima se coloca como pointer*/
+  transition: 0.5s; /*esto crea una transiccion el cual se usa para el hover*/
 }
 
 .menu__transporte:hover {
   /* Al pasar el cursor sobre un elemento del submenú, cambia su color y fondo */
-  background-color: var(--color-palido);
-  color: var(--color-verde);
+  background-color: var(--color-palido); /*Hace que el fondo sea de color blanco al pasar el mouse por encima*/
+  color: var(--color-verde); /*Hace que el color del texto cambie a verde cuando se pasa el mouse por encima*/
 }

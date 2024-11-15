@@ -111,13 +111,3 @@ html {
   background-color: var(--color-rose); /* Aplica el color rosado de la variable */
   background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
 }
- 45vh;
-  width: 100vw;
-  background-color: var(--color-rose);
-  background-image: url(../img/ruido.png);
-}
-} 45vh;
-  width: 100vw;
-  background-color: var(--color-rose);
-  background-image: url(../img/ruido.png);
-}

@@ -15,12 +15,14 @@
 .testimonials__izquierda {
   display: flex; /* Configura un diseño flexible */
   align-items: center; /* Centra los elementos verticalmente */
+
 }
 
 /* Sección derecha de los testimonios */
 .testimonials__derecha {
   display: flex; /* Configura un diseño flexible */
   align-items: center; /* Centra los elementos verticalmente */
+  margin-left: 50px; /*Crea un espacio para la derecha para moverse*/
 }
 
 /* Estilo del título en la sección de testimonios */

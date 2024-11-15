@@ -67,7 +67,7 @@
   font-weight: bold;
   /* establece negrilla en el texto */
   margin-top: 50px;
-  establece la margen 
+  /* establece la margen */
   margin-right: 210px;
 }
 
@@ -77,6 +77,10 @@
   border-top: 3px solid var(--color-palido);
 }
 
+.slogan__bordes--grande {
+  width: 40px;
+  font-size: 80px;
+}
 .slogan__decoracion {
   display: flex;
   grid-row: 2 / 3;
@@ -110,7 +114,7 @@
 .slogan__chica {
   grid-row: 2 / 3;
   grid-column: 1 / 3;
-  margin-top: -100px;
+  margin-top: 100px;
   margin-left: 150px;
 }
 @media (max-width: 700px) {
