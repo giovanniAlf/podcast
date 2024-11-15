@@ -1,41 +1,64 @@
 .podcast {
   display: grid;
+  /*establece una grid*/
   grid-template-columns: 1fr 1fr;
+  /*crea dos columnas*/
   grid-template-rows: auto auto auto auto;
+  /*crea cada fila en automatico*/
 }
 
 .podcast__titulo {
   display: flex;
+  /*establece como un diseño flexible*/
   text-transform: lowercase;
+  /*transforma todo el texto en minuscula*/
   color: var(--color-palido);
+  /*le da color a las letras de un color predeterminado palido*/
   font-size: 200px;
+  /*el tamaño de letra sera de 200px*/
   font-weight: bold;
+  /*hace que la letra tenga un grosor*/
   margin: auto auto;
+  
   grid-row: 1 / 2;
+ /* Ocupa la primera fila y la segunda columna de la cuadrícula */
   grid-column: 1 / 3;
+  /*ocupa la primera columna y la tercera columna de la cuadricula*/
   text-align: center;
 }
 .podcast__contenedor_circulo
 {
     grid-row: 1 / 1;
+    /* Ocupa la primera fila y la segunda columna de la cuadrícula */
     grid-column: 2 / 3;
+    /* Ocupa la segunda columna y la tercera columna de la cuadrícula */
     display: flex;
+    /*establece flexible el elemento*/
     justify-content: end;
+    /*controla la alineación de todos los elementos en el eje principal.*/
 }
 .podcast__circulito {
   width: 400px;
+  /*establece que la anchura sea de 400px*/
   height: 600px;
+  /*establece que la altura sea de 600px*/
   grid-row: 1 / 2;
+   /* Ocupa la primera fila y la segunda fila de la cuadrícula */
   grid-column: 2 / 3;
+  /* Ocupa la segunda columna y la tercera columna de la cuadrícula */
   margin-top: -200px;
+  /*hace que la margen de arriba se devuelva 200px ya que esta en numeros negativos*/
 }
 
 .podcast__portada_arriba,
 .podcast__portada_medio,
 .podcast__portada_abajo {
   display: flex;
+   /*establece flexible el elemento*/
   align-items: center;
+  /*controlan la alineación de nuestros elementos flexibles en el eje transversal al centro*/
   justify-content: center;
+  /*controla la alineación de todos los elementos en el eje principal al centro*/
 }
 
 .podcast__portada_arriba { grid-row: 2 / 3; grid-column: 1 / 2; }
@@ -44,23 +67,33 @@
 
 .podcast__imagen {
   height: 800px;
+  /*establece que la altura sea de 800px*/
   width: 600px;
+  /*establece que la altura sea de 600px*/
+
 }
 
 .podcast__parrafo_arriba {
   grid-row: 2 / 3;
+   /* Ocupa la segunda fila y la tercera fila de la cuadrícula */
   grid-column: 2 / 3;
+    /* Ocupa la segunda columna y la tercera columna de la cuadrícula */
 }
 
 .podcast__parrafo_medio {
   grid-row: 3 / 4;
+   /* Ocupa la tercera fila y la cuarta fila de la cuadrícula */
   grid-column: 1 / 2;
+  /* Ocupa la primera columna y la segunda columna de la cuadrícula */
   padding-left: 200px;
+  /* crea el espacio o área alrededor del contenido de un elemento de 200px hacia la izquierda*/
 }
 
 .podcast__parrafo_abajo {
   grid-row: 4 / 5;
+  /* Ocupa la cuarta fila y la quinta fila de la cuadrícula */
   grid-column: 2 / 3;
+   /* Ocupa la segunda columna y la tercera columna de la cuadrícula */
 }
 
 .podcast__pincho_arriba { grid-row: 2 / 3; grid-column: 1 / 2; margin-left: 70px; }
@@ -71,32 +104,50 @@
 
 .podcast__subtitulo {
   width: 600px;
+  /*establece un ancho de 600px*/
   font-size: 80px;
+  /*establece que el tamaño de letra sea de 80px*/
   text-transform: lowercase;
+   /*transforma todo el texto en minuscula*/
   color: var(--color-palido);
+  /*color de texto sea de un root de un color definido*/
 }
 
 .podcast__texto {
   margin-top: 30px;
+  /*crea una margen desde arriba con un tamaño de 30px*/
   color: var(--color-oscuro);
+  /*color de texto de un color definido desde el root*/
   font-size: 20px;
+  /*establece un tamaño de letra de 20px*/
   font-weight: bold;
+  /* se emplea para mostrar un texto en negrita*/
   width: 700px;
+  /*establece una anchura de 700px*/
   margin-bottom: 50px;
+  /*hace que se crea una margen desde abajo de 50px*/
 }
 
 .podcast__host {
   font-size: 40px;
+  /*establece el tamaño de texto de 40px*/
   color: var(--color-palido);
+  /*establece el color predefinido de una variable root*/
   font-weight: bold;
+  /* se emplea para mostrar un texto en negrita*/
   margin-top: 50px;
+  /*establece una margen desde arriba de 50px*/
 }
 
 .podcast__ceo {
   margin-top: 10px;
+ /*establece una margen desde arriba de 50px*/
   font-size: 20px;
+  /*establece un tamaño de texto de 20px*/
   text-transform: uppercase;
+  /*establece un tipo de fuente en el texto*/
   font-weight: bold;
+   /* se emplea para mostrar un texto en negrita*/
 }
 @media (max-width: 700px) {
   /* Ajustes para pantallas con un ancho máximo de 700px */

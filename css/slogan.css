@@ -1,51 +1,73 @@
 .slogan {
   display: grid;
+  /*establece un diseño en cuadricuñas*/
   grid-template-columns: 2fr 1fr 1fr 2fr;
+  /*crear la grid y poner columnas de los tamaños predefinidos y los separa por fragmentos*/
   grid-template-rows:1fr;
+  /*crea la grid de la fila en un fragmento*/
 }
 
 .slogan__parrafo {
   display: flex;
+  /*establece como flexible el elemento*/
   flex-direction: column;
+  /*hace que la direccion del elemento sea por una columna*/
   padding: 50px;
+  /* crea el espacio o área alrededor del contenido de un elemento de 50px. */
   grid-row: 1 / 2;
+   /* Ocupa la primera fila y la segunda fila de la cuadrícula */
   grid-column: 1 / 3;
+   /* Ocupa la primera columna y la tercera columna de la cuadrícula */
   padding-left: 150px;
+  /* crea el espacio o área de la izquierda del contenido de un elemento de 150px. */
 
 
 }
 
 .slogan__botones {
   display: flex;
+  /* establece un elemento flexible */
   margin: 35px 0;
+  /* establece una margen alrededor de todo el elemento de 35px */
+  
   gap: 20px;
+  /* especifica los canales entre las filas y las columnas de la cuadrícula */
 }
 
 .slogan__down {
   color: var(--color-palido);
+  /* color de texto predefinido por un color ya definido por el root */
   font-weight: bold;
+  /* establece que la letra sea en negrilla */
   font-size: 22px;
+  /* establece el tamaño de la letra con 22px */
   margin-top: 80px;
+  /* establece una margen desde arriba de 80px */
 }
 
 .slogan__imagenes {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
-  grid-row: 1 / 2;
-  grid-column: 3 / 5;
+  display: grid;/*establece un diseño en cuadricuñas*/
+  grid-template-columns: 1fr;/*crear la grid y poner columnas de los tamaños predefinidos y lo separa por un fragmentos*/
+  grid-template-rows: 1fr 2fr; /*crear la grid y poner columnas de los tamaños predefinidos y los separa por fragmentos*/
+  grid-row: 1 / 2; /* Ocupa la primera fila y la segunda fila de la cuadrícula */
+  grid-column: 3 / 5; /* Ocupa tercera columna y la quinta columna de la cuadrícula */
 }
 
 .slogan__numeros {
   display: flex;
+   /* establece un elemento flexible */
   align-items: end;
+   /*controlan la alineación de nuestros elementos flexibles en el eje transversal al end*/
   flex-direction: column;
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-  color: var(--color-palido);
-  font-size: 70px;
+  /* establece la direccion del elemento como columna */
+  grid-row: 1 / 1;/* Ocupa la primera fila y la primera fila de la cuadrícula */
+  grid-column: 1 / 1;/* Ocupa primera columna y la primera columna de la cuadrícula */
+  color: var(--color-palido);/* color de texto predefinido por un color ya definido por el root */
+  /* font-size: 70px; establece como tamaño de texto 70px */
   font-weight: bold;
+  /* establece negrilla en el texto */
   margin-top: 50px;
+  establece la margen 
   margin-right: 210px;
 }
 

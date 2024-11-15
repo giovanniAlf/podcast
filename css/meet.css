@@ -1,46 +1,76 @@
-/* Meet Section */
+/* Sección Meet */
 .meet {
+  /* Establece un diseño de cuadrícula */
   display: grid;
+  /* Define dos columnas de igual tamaño */
   grid-template-columns: 1fr 1fr;
+  /* Define una sola fila */
   grid-template-rows: 1fr;
+  /* Establece el nivel de apilamiento */
   z-index: 4;
 }
 
+/* Contenedor de la imagen */
 .meet__imagen {
+  /* Establece un diseño flexible */
   display: flex;
+  /* Centra la imagen horizontal y verticalmente */
   margin: auto;
+  /* Tamaño fijo de la imagen */
   height: 800px;
   width: 800px;
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
+  /* Ocupa la primera fila y la primera columna de la cuadrícula */
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 
+/* Contenedor del párrafo */
 .meet__parrafo {
+  /* Margen superior e inferior */
   padding: 200px;
+  /* Elimina el margen izquierdo */
   padding-left: 0px;
-  grid-row: 1 / 1;
+  /* Ocupa la primera fila y la segunda columna de la cuadrícula */
+  grid-row: 1 / 2;
   grid-column: 2 / 3;
+  /* Establece un diseño flexible */
   display: flex;
+  /* Apila los elementos verticalmente */
   flex-direction: column;
 }
-.meet__contenedor_boton{
+
+/* Contenedor del botón */
+.meet__contenedor_boton {
+  /* Margen superior */
   margin-top: 50px;
 }
+
+/* Elemento de pinchos */
 .meet__pinchos {
+  /* Margen alrededor del elemento */
   margin: 100px;
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
+  /* Ocupa la primera fila y la primera columna de la cuadrícula */
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 
+/* Elemento de pinchos más pequeños */
 .meet__pinchos--bajos {
+  /* Centra el elemento horizontal y verticalmente */
   margin: auto;
-  grid-row: 1 / 1;
+  /* Ocupa la primera fila y la segunda columna de la cuadrícula */
+  grid-row: 1 / 2;
   grid-column: 2 / 3;
+  /* Ajusta la posición del elemento */
   margin-top: 650px;
   margin-left: 600px;
+  /* Tamaño fijo del elemento */
   height: 300px;
   width: 300px;
 }
+
+
+
 @media (max-width: 700px) {
   /* Ajustes para pantallas con un ancho máximo de 700px */
 

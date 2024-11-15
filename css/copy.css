@@ -1,45 +1,63 @@
-.copyright__title{
-
+/* Título del copyright */
+.copyright__title {
+    /* Posicionamiento relativo para ajustar la posición */
     position: relative;
+    /* Mueve el título 100px hacia abajo y 3px hacia la derecha */
     top: 100px;
     left: 3px;
+    /* Espacio entre letras */
     letter-spacing: 1px;
+    /* Fuente utilizada */
     font-family: 'DM Sans';
+    /* Peso de fuente en negrita */
     font-weight: bold;
+    /* Tamaño de fuente */
     font-size: 40px;
+    /* Color del texto */
     color: var(--color-palido);
-  
   }
   
+  /* Contenedor principal del copyright */
   .copyright__container {
+    /* Display flex para disposición en línea */
     display: flex;
+    /* Alinea los elementos en una fila */
     flex-direction: row;
+    /* Distribuye el espacio entre los elementos */
     justify-content: space-around;
   }
   
+  /* Texto del copyright */
   .copyright__text {
-  
+    /* Mueve el texto 110px hacia abajo y 3px hacia la derecha */
     top: 110px;
+    /* Posicionamiento relativo */
     position: relative;
-    left: 3px;
+    /* Fuente utilizada */
     font-family: 'DM Sans';
+    /* Peso de fuente seminegrita */
     font-weight: 600;
-  
   }
   
+  /* Símbolo de copyright */
   .copy {
+    /* Mueve el símbolo 180px hacia abajo y 279px hacia la derecha */
     top: 180px;
+    right: 279px;
+    /* Posicionamiento relativo */
     position: relative;
+    /* Alinea el símbolo al centro horizontalmente */
     display: flex;
     justify-content: center;
-    right: 279px;
+    /* Color del texto */
     color: var(--color-palido);
+    /* Tamaño de fuente */
     font-size: 40px;
+    /* Espacio entre letras */
     letter-spacing: 4px;
+    /* Fuente utilizada */
     font-family: 'DM Sans';
   }
-
-  
   
   @media (max-width: 700px) {
     /* Ajustes para pantallas con un ancho máximo de 700px */

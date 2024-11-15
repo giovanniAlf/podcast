@@ -1,72 +1,85 @@
+/* Estilos generales para la sección de conversación */
 .conversation__title {
-  display: flex;
-  align-items: center;
+  display: flex; /* Establece un contenedor flexible */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
 }
 
 .conversation__title-whatwedo {
-  font-size: 20px;
-  color: var(--color-palido);
-  text-align: center;
-  display: inline-block;
-  margin: 0 auto;
-  padding-top: 118px;
+  font-size: 20px; /* Tamaño de fuente */
+  color: var(--color-palido); /* Color del texto (definido en otra parte) */
+  text-align: center; /* Alinea el texto al centro */
+  display: inline-block; /* Se comporta como un bloque pero dentro de una línea */
+  margin: 0 auto; /* Centra el elemento horizontalmente */
+  padding-top: 118px; /* Espacio superior */
 }
 
+/* Estilos para el texto central */
 .conversation__central-text {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: flex; /* Contenedor flexible */
+  align-items: center; /* Alinea verticalmente al centro */
+  flex-direction: column; /* Apila los elementos verticalmente */
 }
 
-.conversation__main-text {
-  font-size: 160px;
-  color: var(--color-palido);
+.conversation__main-text,
+.conversation__sub-text {
+  font-size: 160px; /* Tamaño de fuente grande */
+  color: var(--color-palido); /* Color del texto */
 }
 
 .conversation__sub-text {
-  color: var(--color-palido);
-  font-size: 160px;
-  top: 20px;
+  top: 20px; /* Posiciona el texto 20px desde la parte superior */
 }
 
 .conversation__parrafo {
-  font-size: 25px;
-  max-width: 600px;
-  text-align: center;
-  color: var(--color-oscuro);
+  font-size: 25px; /* Tamaño de fuente */
+  max-width: 600px; /* Ancho máximo */
+  text-align: center; /* Alinea al centro */
+  color: var(--color-oscuro); /* Color del texto */
 }
 
 .conversation__star {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding-top: 10px;
+  display: flex; /* Contenedor flexible */
+  align-items: center; /* Alinea verticalmente al centro */
+  flex-direction: column; /* Apila verticalmente */
+  justify-content: space-evenly; /* Distribuye el espacio entre elementos */
+  padding-top: 10px; /* Espacio superior */
 }
 
 .conversation__circle-text-left img {
-  width: 420px;
+  width: 420px; /* Ancho de la imagen */
 }
-
 /* Línea superior izquierda */
+/* Línea diagonal superior izquierda */
 .conversation::before {
+  /* Crea un pseudo-elemento antes del elemento .conversation */
   content: "";
+  /* Posiciona el pseudo-elemento de forma absoluta */
   position: absolute;
+  /* Ubica la esquina superior izquierda de la línea a 20px del borde superior e izquierdo */
   top: 20px;
   left: 20px;
+  /* Crea un degradado lineal de 90 grados de transparente a blanco y vuelve a transparente */
   background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
+  /* Rota la línea -20 grados */
   transform: rotate(-20deg);
+  /* Establece la opacidad de la línea en 0.8 */
   opacity: 0.8;
 }
 
-/* Línea inferior derecha */
+/* Línea diagonal inferior derecha */
 .conversation::after {
+  /* Crea un pseudo-elemento después del elemento .conversation */
   content: "";
+  /* Posiciona el pseudo-elemento de forma absoluta */
   position: absolute;
+  /* Ubica la esquina inferior derecha de la línea a 20px del borde inferior y derecho */
   bottom: 20px;
   right: 20px;
+  /* Crea un degradado lineal de 90 grados de transparente a blanco y vuelve a transparente */
   background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
+  /* Rota la línea 20 grados */
   transform: rotate(20deg);
+  /* Establece la opacidad de la línea en 0.8 */
   opacity: 0.8;
 }
 
