@@ -1,110 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url(menu.css);
-@import url(slogan.css);
-@import url(meet.css);
-@import url(podcast.css);
-@import url(conversation.css);
-@import url(startup.css);
-@import url(testimonials.css);
-@import url(join.css);
-@import url(copy.css);
-@import url(querys.css);
-@import url(componentes.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); /* Importa la fuente DM Sans desde Google Fonts */
+@import url(menu.css); /* Importa los estilos del archivo menu.css */
+@import url(slogan.css); /* Importa los estilos del archivo slogan.css */
+@import url(meet.css); /* Importa los estilos del archivo meet.css */
+@import url(podcast.css); /* Importa los estilos del archivo podcast.css */
+@import url(conversation.css); /* Importa los estilos del archivo conversation.css */
+@import url(startup.css); /* Importa los estilos del archivo startup.css */
+@import url(testimonials.css); /* Importa los estilos del archivo testimonials.css */
+@import url(join.css); /* Importa los estilos del archivo join.css */
+@import url(copy.css); /* Importa los estilos del archivo copy.css */
+@import url(querys.css); /* Importa los estilos del archivo querys.css */
+@import url(componentes.css); /* Importa los estilos del archivo componentes.css */
 
 * {
-  margin: 0px;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0px; /* Elimina los márgenes predeterminados de todos los elementos */
+  padding: 0; /* Elimina los rellenos predeterminados de todos los elementos */
+  box-sizing: border-box; /* Cambia el modelo de caja para incluir bordes y rellenos en el tamaño total */
 }
 
 :root {
-  --color-palido: #F0EBD8;
-  --color-oscuro: #172726;
-  --color-verde: #28B290;
-  --color-rose: #E7A9AE;
-
+  --color-palido: #F0EBD8; /* Define un color pálido como variable */
+  --color-oscuro: #172726; /* Define un color oscuro como variable */
+  --color-verde: #28B290; /* Define un color verde como variable */
+  --color-rose: #E7A9AE; /* Define un color rosado como variable */
 }
-html{
-  scroll-behavior: smooth;
+
+html {
+  scroll-behavior: smooth; /* Activa el desplazamiento suave en el documento */
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  display: flex; /* Define un contenedor flexible */
+  flex-direction: column; /* Organiza los elementos hijos en una columna */
+  overflow-y: hidden; /* Oculta el desbordamiento vertical */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
 }
-.space{
-  height: 100px;
-  width: 100vw;
-  background-color: var(--color-verde);
-  background-image: url(../img/ruido.png);
+
+.space {
+  height: 100px; /* Altura del espacio de 100 píxeles */
+  width: 100vw; /* Ancho total del viewport */
+  background-color: var(--color-verde); /* Aplica el color verde de la variable */
+  background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
 }
-.menu{
-  z-index: 2;
+
+.menu {
+  z-index: 2; /* Posiciona el elemento sobre otros con menor z-index */
 }
+
 .slogan {
-  height: 90vh;
-  width: 100vw;
-  background-color: var(--color-verde);
-  background-image: url(../img/ruido.png);
-  z-index: 1;
+  height: 90vh; /* Altura del 90% del viewport */
+  width: 100vw; /* Ancho total del viewport */
+  background-color: var(--color-verde); /* Aplica el color verde de la variable */
+  background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
+  z-index: 1; /* Posiciona el elemento detrás de otros con mayor z-index */
 }
 
 .conversation {
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--color-rose);
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  background-image: url(../img/ruido.png);
-  z-index: 3;
+  height: 100vh; /* Altura total del viewport */
+  width: 100vw; /* Ancho total del viewport */
+  background-color: var(--color-rose); /* Aplica el color rosado de la variable */
+  display: flex; /* Define un contenedor flexible */
+  justify-content: start; /* Alinea los elementos hijos al inicio horizontalmente */
+  flex-direction: column; /* Organiza los elementos hijos en una columna */
+  background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
+  z-index: 3; /* Posiciona el elemento sobre otros con menor z-index */
 }
 
 .meet {
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--color-verde);
-  background-image: url(../img/ruido.png);
+  height: 100vh; /* Altura total del viewport */
+  width: 100vw; /* Ancho total del viewport */
+  background-color: var(--color-verde); /* Aplica el color verde de la variable */
+  background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
 }
 
 /* STAR */
 .startup {
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--color-rose);
-  background-image: url(../img/ruido.png);
+  height: 100vh; /* Altura total del viewport */
+  width: 100vw; /* Ancho total del viewport */
+  background-color: var(--color-rose); /* Aplica el color rosado de la variable */
+  background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
 }
 
 /* Podcast */
 .podcast {
-  height: 300vh;
-  width: 100vw;
-  background-color: var(--color-verde);
-  background-image: url(../img/ruido.png);
+  height: 300vh; /* Altura del triple del viewport */
+  width: 100vw; /* Ancho total del viewport */
+  background-color: var(--color-verde); /* Aplica el color verde de la variable */
+  background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
 }
 
 /* TESTIMONIALS */
-
 .testimonials {
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--color-rose);
-  background-image: url(../img/ruido.png);
+  height: 100vh; /* Altura total del viewport */
+  width: 100vw; /* Ancho total del viewport */
+  background-color: var(--color-rose); /* Aplica el color rosado de la variable */
+  background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
 }
 
 /* JOIN */
 .join {
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--color-verde);
-  background-image: url(../img/ruido.png);
+  height: 100vh; /* Altura total del viewport */
+  width: 100vw; /* Ancho total del viewport */
+  background-color: var(--color-verde); /* Aplica el color verde de la variable */
+  background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
 }
 
 /* COPYRIGHT */
 .copyright {
-  height: 45vh;
+  height: 45vh; /* Altura del 45% del viewport */
+  width: 100vw; /* Ancho total del viewport */
+  background-color: var(--color-rose); /* Aplica el color rosado de la variable */
+  background-image: url(../img/ruido.png); /* Agrega una imagen de fondo */
+}
+ 45vh;
+  width: 100vw;
+  background-color: var(--color-rose);
+  background-image: url(../img/ruido.png);
+}
+} 45vh;
   width: 100vw;
   background-color: var(--color-rose);
   background-image: url(../img/ruido.png);
