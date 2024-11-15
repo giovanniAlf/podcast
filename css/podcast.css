@@ -99,77 +99,87 @@
   font-weight: bold;
 }
 @media (max-width: 700px) {
-  
-.podcast__pincho_arriba { display: none; }
-.podcast__pincho_medio { display: none;  }
-.podcast__pincho_abajo { display: none;  }
-.podcast__portada_arriba { display: none; }
-.podcast__portada_medio { display: none;  }
-.podcast__portada_abajo { display: none;  }
-.podcast {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
-}
-.podcast__parrafo_arriba {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  font-size: 1vh;
-}
-.podcast__parrafo_medio {
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
-  padding-left:0px;
-}
-.podcast__parrafo_abajo {
-  grid-row: 4 / 5;
-  grid-column: 1 / 2;
-}
-.podcast__subtitulo{
+  /* Ajustes para pantallas con un ancho máximo de 700px */
 
-  font-size: 3vh;
-  padding: 1vh;
-  max-width: 300px;
+  /* Oculta elementos decorativos no esenciales */
+  .podcast__pincho_arriba { display: none; }
+  .podcast__pincho_medio { display: none; }
+  .podcast__pincho_abajo { display: none; }
+  .podcast__portada_arriba { display: none; }
+  .podcast__portada_medio { display: none; }
+  .podcast__portada_abajo { display: none; }
 
-}
-.podcast__texto{
-  font-size: 2vh;
-  /* padding: 1vh; */
-  /* text-align: center; */
-  /* margin-left: -1vh; */
-  /* justify-content: center; */
-  max-width: 300px;
-  /* margin:  0 auto; */
-  margin-left: 3vh;
+  .podcast {
+      /* Ajusta el diseño de la sección podcast a una cuadrícula */
+      display: grid;
+      grid-template-columns: 1fr; /* Una sola columna */
+      grid-template-rows: auto auto auto auto; /* Cuatro filas con tamaños automáticos */
+  }
 
+  .podcast__parrafo_arriba {
+      /* Ajusta el párrafo superior */
+      grid-row: 2 / 3; /* Ocupa la segunda fila */
+      grid-column: 1 / 2; /* Ocupa toda la única columna */
+      font-size: 1vh; /* Tamaño de fuente pequeño */
+  }
 
+  .podcast__parrafo_medio {
+      /* Ajusta el párrafo medio */
+      grid-row: 3 / 4; /* Ocupa la tercera fila */
+      grid-column: 1 / 2; /* Ocupa toda la única columna */
+      padding-left: 0px; /* Sin padding a la izquierda */
+  }
 
-}
-.podcast__titulo {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-  font-size: 10vh;
-  margin: auto 0;
-  margin-left: 7vh;
-}
-.podcast__boton{
+  .podcast__parrafo_abajo {
+      /* Ajusta el párrafo inferior */
+      grid-row: 4 / 5; /* Ocupa la cuarta fila */
+      grid-column: 1 / 2; /* Ocupa toda la única columna */
+  }
 
-  margin-left: 3.2vh;
-  font-size: 2vh;
-}
-.podcast__contenedor_circulo
-{
-    display:none;
-}
-.podcast__host {
-  font-size: 20px;
-  color: var(--color-palido);
-  font-weight: bold;
-  margin-left: 3vh;
-}
-.podcast__ceo{
+  .podcast__subtitulo {
+      /* Estilo para el subtítulo */
+      font-size: 3vh; /* Tamaño de fuente medio */
+      padding: 1vh; /* Espaciado interno */
+      max-width: 300px; /* Ancho máximo limitado */
+  }
 
-  margin-left: 3vh;
-}
+  .podcast__texto {
+      /* Ajusta el texto principal */
+      font-size: 2vh; /* Tamaño de fuente pequeño */
+      max-width: 300px; /* Ancho máximo limitado */
+      margin-left: 3vh; /* Mueve el texto hacia la derecha */
+  }
 
+  .podcast__titulo {
+      /* Ajusta el título principal */
+      grid-row: 1 / 2; /* Ocupa la primera fila */
+      grid-column: 1 / 2; /* Ocupa toda la única columna */
+      font-size: 10vh; /* Tamaño de fuente grande */
+      margin: auto 0; /* Centra verticalmente */
+      margin-left: 7vh; /* Mueve el título hacia la derecha */
+  }
+
+  .podcast__boton {
+      /* Estilo para el botón */
+      margin-left: 3.2vh; /* Mueve el botón hacia la derecha */
+      font-size: 2vh; /* Tamaño de fuente pequeño */
+  }
+
+  .podcast__contenedor_circulo {
+      /* Oculta elementos decorativos en forma de círculo */
+      display: none;
+  }
+
+  .podcast__host {
+      /* Estilo para el texto del host */
+      font-size: 20px; /* Tamaño de fuente fijo */
+      color: var(--color-palido); /* Usa una variable de color predefinida */
+      font-weight: bold; /* Texto en negrita */
+      margin-left: 3vh; /* Mueve el texto hacia la derecha */
+  }
+
+  .podcast__ceo {
+      /* Estilo para texto relacionado con el CEO */
+      margin-left: 3vh; /* Mueve el texto hacia la derecha */
+  }
 }

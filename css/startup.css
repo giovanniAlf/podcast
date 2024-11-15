@@ -62,24 +62,28 @@
 
 
 @media (max-width: 700px) {
+  /* Ajustes para pantallas con un ancho máximo de 700px */
+  
   .startup {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 100vh 1fr 1fr;
-    }
-    .startup__title{
-      font-size: 7vh;
-      margin-left: -20vh;
-      margin-top: -10vh;
-    }
+      display: grid; /* Cambia el diseño del contenedor a una cuadrícula */
+      grid-template-columns: 1fr 1fr 1fr; /* Define tres columnas iguales */
+      grid-template-rows: 100vh 1fr 1fr; /* La primera fila ocupa toda la altura de la ventana, las siguientes son proporcionales */
+  }
 
-    .startup__paragraph{
+  .startup__title {
+      /* Estilos para el título en la sección startup */
+      font-size: 7vh; /* Tamaño de fuente grande relativo a la altura de la ventana */
+      margin-left: -20vh; /* Mueve el título hacia la izquierda en 20vh */
+      margin-top: -10vh; /* Mueve el título hacia arriba en 10vh */
+  }
 
-      margin-left: -20vh;
-    }
-    .startup__button-listennow{
+  .startup__paragraph {
+      /* Estilos para el párrafo en la sección startup */
+      margin-left: -20vh; /* Mueve el párrafo hacia la izquierda en 20vh */
+  }
 
-      margin-right: 10vh;
-    }
-
-   }
+  .startup__button-listennow {
+      /* Estilos para el botón de acción 'Listen Now' */
+      margin-right: 10vh; /* Añade un margen a la derecha para ajustar su posición */
+  }
+}

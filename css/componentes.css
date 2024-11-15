@@ -56,71 +56,71 @@
 
 
 @media (max-width: 700px) {
-    /* Ajustes para pantallas de 700px o menos */
-    
+    /* Ajustes para pantallas con un ancho máximo de 700px */
+
     .parrafo {
-        font-size: 2vh; /* Tamaño de fuente relativo al alto de la ventana */
-        position: relative;
-        bottom: 10vh; /* Mueve el párrafo hacia arriba en 10vh */
-        left: -11vh; /* Desplaza el párrafo hacia la izquierda en 11vh */
-        margin: 4vh; /* Margen de 4vh alrededor del párrafo */
-        padding: 2vh; /* Espaciado interno de 2vh */
+        font-size: 2vh; /* Tamaño de fuente adaptativo basado en la altura de la ventana */
+        position: relative; /* Permite ajustar la posición usando top, bottom, left, right */
+        bottom: 10vh; /* Mueve el párrafo hacia arriba 10vh desde su posición inicial */
+        left: -11vh; /* Desplaza el párrafo hacia la izquierda 11vh */
+        margin: 4vh; /* Espacio externo de 4vh alrededor del párrafo */
+        padding: 2vh; /* Espacio interno de 2vh dentro del párrafo */
     }
     
     .titulo {
-        font-size: 10vh; /* Tamaño de fuente grande relativo a la altura de la ventana */
-        line-height: 7vh; /* Ajusta el interlineado a 7vh */
-        position: relative;
-        bottom: 10vh; /* Mueve el título hacia arriba en 10vh */
-        left: -11vh; /* Desplaza el título hacia la izquierda en 11vh */
-        margin: 4vh; /* Margen de 4vh alrededor del título */
+        font-size: 10vh; /* Fuente grande relativa a la altura de la ventana */
+        line-height: 7vh; /* Ajusta el espacio entre líneas a 7vh */
+        position: relative; /* Ajuste de posición relativo */
+        bottom: 10vh; /* Mueve el título hacia arriba 10vh */
+        left: -11vh; /* Desplaza el título hacia la izquierda 11vh */
+        margin: 4vh; /* Espacio externo de 4vh */
     }
 
     .boton {  
-        /* Estilos para el botón general */
-        font-weight: bold; /* Hace el texto en negrita */
-        color: var(--color-oscuro); /* Color del texto según la variable de color */
-        text-decoration: none; /* Sin subrayado */
-        font-size: 2vh; /* Tamaño de fuente relativo a la altura */
+        /* Estilos generales para los botones */
+        font-weight: bold; /* Texto en negrita */
+        color: var(--color-oscuro); /* Color de texto definido por la variable */
+        text-decoration: none; /* Elimina el subrayado del texto */
+        font-size: 2vh; /* Tamaño de fuente adaptativo */
         text-transform: uppercase; /* Convierte el texto a mayúsculas */
-        background-color: var(--color-rose); /* Color de fondo usando la variable */
-        padding: 1vh; /* Espaciado interno de 1vh */
-        border-radius: 5vh; /* Bordes redondeados */
-        border: 7px solid var(--color-oscuro); /* Borde de 7px sólido */
-        transition: 0.5s; /* Transición suave en cambios de estilo */
-        text-align: center; /* Centra el texto en el botón */
+        background-color: var(--color-rose); /* Fondo definido por la variable */
+        padding: 1vh; /* Espaciado interno */
+        border-radius: 5vh; /* Esquinas redondeadas */
+        border: 7px solid var(--color-oscuro); /* Borde de 7px con color de la variable */
+        transition: 0.5s; /* Transición suave para cambios de estilo */
+        text-align: center; /* Centrado del texto */
     }
     
     .boton--verde {
-        /* Botón con clase modificadora "verde" */
-        background-color: var(--color-verde); /* Cambia el fondo a verde usando la variable */
-        position: relative;
-        bottom: 3vh; /* Mueve el botón hacia arriba en 3vh */
+        /* Estilos específicos para el botón con clase modificadora "verde" */
+        background-color: var(--color-verde); /* Fondo verde definido por la variable */
+        position: relative; /* Posición ajustable */
+        bottom: 3vh; /* Mueve el botón hacia arriba 3vh */
     }
 
     .boton:nth-child(3) {
-        /* Tercer botón */
-        position: relative;
-        left: 3vh; /* Mueve el botón a la derecha en 3vh */
+        /* Estilos para el tercer botón */
+        position: relative; /* Permite ajustar la posición */
+        left: 3vh; /* Desplaza el botón hacia la derecha 3vh */
     }
     
     .boton:nth-child(5) {
-        /* Quinto botón */
-        position: relative;
-        right: 15vh; /* Mueve el botón a la izquierda en 15vh */
-        font-size: 2vh; /* Tamaño de fuente de 2vh */
-        bottom: 3vh; /* Mueve el botón hacia arriba en 3vh */
+        /* Estilos para el quinto botón */
+        position: relative; /* Ajuste de posición */
+        right: 15vh; /* Desplaza el botón hacia la izquierda 15vh */
+        font-size: 2vh; /* Ajusta el tamaño de la fuente */
+        bottom: 3vh; /* Mueve el botón hacia arriba 3vh */
     }
     
     .boton:nth-child(2) {
-        /* Segundo botón */
+        /* Estilos para el segundo botón */
         display: none; /* Oculta el segundo botón */
     }
     
     .boton:nth-child(1) {
-        /* Primer botón */
-        position: relative; 
-        right: 6vh; /* Mueve el botón a la izquierda en 6vh */
-        bottom: 17vh; /* Mueve el botón hacia arriba en 17vh */
+        /* Estilos para el primer botón */
+        position: relative; /* Ajuste de posición */
+        right: 6vh; /* Desplaza el botón hacia la izquierda 6vh */
+        bottom: 17vh; /* Mueve el botón hacia arriba 17vh */
     }
 }

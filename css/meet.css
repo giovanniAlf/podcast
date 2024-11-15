@@ -42,26 +42,28 @@
   width: 300px;
 }
 @media (max-width: 700px) {
+  /* Ajustes para pantallas con un ancho máximo de 700px */
+
   .meet {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 100vh 1fr 1fr;
-    } 
+      /* Estilo para la sección principal de meet */
+      display: grid; /* Usa un diseño de cuadrícula */
+      grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
+      grid-template-rows: 100vh 1fr 1fr; /* Primera fila ocupa toda la altura de la ventana, las siguientes son proporcionales */
+  }
 
-    .meet__imagen {
-      display: flex;
-      margin: auto;
-      height: 400px;
-      width: 700px;
-      grid-row: 1 / 4;
-      grid-column: 1 / 2;
-      margin-top: 50vh;
-    }
-    .meet__parrafo{
+  .meet__imagen {
+      /* Estilo para la imagen dentro de la sección */
+      display: flex; /* Usa un contenedor flexible */
+      margin: auto; /* Centra la imagen */
+      height: 400px; /* Altura fija para la imagen */
+      width: 700px; /* Ancho fijo para la imagen */
+      grid-row: 1 / 4; /* La imagen ocupa desde la primera fila hasta la cuarta */
+      grid-column: 1 / 2; /* La imagen se ubica en la primera columna */
+      margin-top: 50vh; /* Añade un margen superior grande para ajustar su posición */
+  }
 
-
-      font-size: -4vh;
-
-
-    }
-  }    
+  .meet__parrafo {
+      /* Estilo para el párrafo en la sección */
+      font-size: -4vh; /* ERROR: Un tamaño de fuente negativo no es válido */
+  }
+}

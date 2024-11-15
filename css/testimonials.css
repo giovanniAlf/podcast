@@ -88,34 +88,36 @@ align-items: center;
   bottom: 1450px;
 }
 @media (max-width: 700px) {
+  /* Ajustes para pantallas con un ancho máximo de 700px */
+  
   .testimonials {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 100vh 1fr 1fr;
-    } 
-    .testimonials__title{
-
-      font-size: 5vh;
-
-
-    }
-    .testimonials__paragraph--down{
-
-      font-size: 2vh;
-
-    }
-    .testimonials__izquierda{
-
-
-      display: none;
-
-    }
-    .testimonials__derecha{
-
-      display: none;
-    }
-    .testimonials__separador{
-
-      margin-right: 20vh;
-    }
+      display: grid; /* Cambia la disposición a un diseño de cuadrícula */
+      grid-template-columns: 1fr 1fr 1fr; /* Define tres columnas iguales en la cuadrícula */
+      grid-template-rows: 100vh 1fr 1fr; /* Primera fila ocupa toda la altura de la ventana (100vh), las siguientes son proporcionales */
+  } 
+  
+  .testimonials__title {
+      /* Estilos para el título dentro del bloque de testimonios */
+      font-size: 5vh; /* Tamaño de fuente grande relativo a la altura de la ventana */
   }
+  
+  .testimonials__paragraph--down {
+      /* Estilos para un párrafo ubicado "hacia abajo" */
+      font-size: 2vh; /* Tamaño de fuente pequeño relativo a la altura de la ventana */
+  }
+  
+  .testimonials__izquierda {
+      /* Oculta el elemento en la sección izquierda de testimonios */
+      display: none; /* No se muestra en la vista */
+  }
+  
+  .testimonials__derecha {
+      /* Oculta el elemento en la sección derecha de testimonios */
+      display: none; /* No se muestra en la vista */
+  }
+  
+  .testimonials__separador {
+      /* Ajusta los márgenes para el elemento separador */
+      margin-right: 20vh; /* Añade un margen derecho significativo para separación */
+  }
+}

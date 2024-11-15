@@ -71,30 +71,37 @@
 }
 
 @media (max-width: 700px) {
+  /* Ajustes para dispositivos con un ancho máximo de 700px */
+
   .conversation__main-text {
-    font-size: 7vh;
+    /* Texto principal de la conversación */
+    font-size: 7vh; /* Aumenta el tamaño de la fuente para mejorar legibilidad */
   }
 
   .conversation__sub-text {
-    font-size: 5vh;
+    /* Texto secundario de la conversación */
+    font-size: 5vh; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
   }
 
   .conversation__parrafo {
-    margin-top: 10vw;
-    font-size: 180%;
-    padding: 3vh;
+    /* Párrafo de la conversación */
+    margin-top: 10vw; /* Añade margen superior para crear separación */
+    font-size: 180%; /* Escala el tamaño de la fuente al 180% del tamaño base */
+    padding: 3vh; /* Añade espacio alrededor del texto */
   }
 
   .conversation__central-text {
-    justify-content: start;
-
+    /* Texto central de la conversación */
+    justify-content: start; /* Alinea el contenido al inicio */
   }
 
   .conversation__star {
-    display: none;
+    /* Elemento estrella en la conversación */
+    display: none; /* Oculta este elemento en pantallas pequeñas */
   }
 
   .conversation__circle-text-left {
-    display: none;
+    /* Texto circular a la izquierda */
+    display: none; /* Oculta este elemento en dispositivos pequeños */
   }
 }

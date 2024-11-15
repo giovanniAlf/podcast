@@ -76,43 +76,46 @@
   width: 300px;
 }
 @media (max-width: 700px) {
+  /* Ajustes para pantallas con un ancho máximo de 700px */
+
   .join {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 100vh 1fr 1fr;
-    }
-
-    .join__title-lorem{
-
-      font-size: 2vh;
-      margin-left: -14vh;
-
-    }
-    .join__title{
-
-      font-size: 16vw;
-      justify-items: center;
-      margin-left: -11vh;
-    }
-    .join__contenedor_izquierda{
-    align-content: flex-start;
-     align-items: center;
-
-    }
-    .join__title p{
-
-      margin-left: 5vh;
-
-    }
-    .join__email{
-
-      margin-left: -9vh;
-
-
-    }
-    .join__submit{
-
-      margin-left: -11vh
-
-    }
+      /* Estilo para la sección principal de join */
+      display: grid; /* Usa un diseño de cuadrícula */
+      grid-template-columns: 1fr 1fr 1fr; /* Divide la cuadrícula en tres columnas iguales */
+      grid-template-rows: 100vh 1fr 1fr; /* Primera fila ocupa toda la altura de la ventana, las siguientes ajustan su tamaño */
   }
+
+  .join__title-lorem {
+      /* Estilo para el subtítulo */
+      font-size: 2vh; /* Tamaño de fuente pequeño para pantallas pequeñas */
+      margin-left: -14vh; /* Mueve el subtítulo hacia la izquierda */
+  }
+
+  .join__title {
+      /* Estilo para el título principal */
+      font-size: 16vw; /* Tamaño de fuente proporcional al ancho de la ventana */
+      justify-items: center; /* Alinea el contenido horizontalmente al centro */
+      margin-left: -11vh; /* Ajusta la posición hacia la izquierda */
+  }
+
+  .join__contenedor_izquierda {
+      /* Estilo para el contenedor izquierdo */
+      align-content: flex-start; /* Alinea el contenido al inicio verticalmente */
+      align-items: center; /* Centra los elementos dentro del contenedor */
+  }
+
+  .join__title p {
+      /* Ajustes para el párrafo dentro del título */
+      margin-left: 5vh; /* Mueve el párrafo hacia la derecha */
+  }
+
+  .join__email {
+      /* Estilo para el campo de email */
+      margin-left: -9vh; /* Ajusta la posición hacia la izquierda */
+  }
+
+  .join__submit {
+      /* Estilo para el botón de envío */
+      margin-left: -11vh; /* Ajusta la posición hacia la izquierda */
+  }
+}

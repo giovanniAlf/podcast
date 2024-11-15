@@ -41,74 +41,66 @@
 
   
   
-    @media (max-width: 700px) 
-    {
-      .copyright__container {
-      display: flex;
-      /* flex-direction: column; */
-      /* align-items: center; */
-      font-size: 1.7vh;
-      /* margin-left: 3vh; */
-      display: flex;
-   
-      justify-content: end;
-   
+  @media (max-width: 700px) {
+    /* Ajustes para pantallas con un ancho máximo de 700px */
+
+    .copyright__container {
+        /* Contenedor principal para la sección de copyright */
+        display: flex; /* Aplica un diseño flexible */
+        /* flex-direction: column; */ /* Comentado: Cambiaría el diseño a una columna */
+        /* align-items: center; */ /* Comentado: Centraría los elementos en el eje transversal */
+        font-size: 1.7vh; /* Tamaño de fuente relativo a la altura de la ventana */
+        justify-content: end; /* Alinea los elementos al final del contenedor horizontalmente */
     }
-        .copyright__title {
-          top: 4;
-          font-size: 2.5vh;
-        }
-                    .copyright__text {
-          
-                      top: 4;
-                      font-size: 1.5vh;
-                      
-                  
-                    }
-                    .copy{
-                   display: none;
-                    }
-                    .copyright__section{
-                      width: 80vw;
-                    }
-                    .copyright__section:nth-child(1){
 
-                  
-                      position: relative;
-                      bottom:  7vh;
-                      left: 8vh;
-
-                 
-                   }
-                   .copyright__section:nth-child(2){
-                 
-                 
-              
-                    position: relative;
-                    top: 13vh;
-                    right:4vh;
-                  }
-                  
-                  .copyright__section:nth-child(3){
-                 
-                      
-                
-                    top: 13vh;
-                    right: -2vh;
-                    position: relative;
-                   
-                 }
-                 
-                 .copyright__section:nth-child(4){
-                 
-               
-                  bottom: 6vh;
-                  right: 9vh;
-                  justify-items: start;
-                  position: relative;
-
-                   
-                 }
-                 
+    .copyright__title {
+        /* Estilo para el título de copyright */
+        top: 4; /* ERROR: Valor incompleto; no tiene unidades */
+        font-size: 2.5vh; /* Tamaño del título ajustado para pantallas pequeñas */
     }
-  
+
+    .copyright__text {
+        /* Estilo para el texto de copyright */
+        top: 4; /* ERROR: Valor incompleto; no tiene unidades */
+        font-size: 1.5vh; /* Tamaño de texto reducido */
+    }
+
+    .copy {
+        /* Oculta este elemento en pantallas pequeñas */
+        display: none;
+    }
+
+    .copyright__section {
+        /* Sección general de copyright */
+        width: 80vw; /* Ajusta el ancho al 80% de la ventana de visualización */
+    }
+
+    .copyright__section:nth-child(1) {
+        /* Estilo para la primera sección */
+        position: relative; /* Permite ajustes de posición */
+        bottom: 7vh; /* Mueve hacia arriba */
+        left: 8vh; /* Mueve hacia la derecha */
+    }
+
+    .copyright__section:nth-child(2) {
+        /* Estilo para la segunda sección */
+        position: relative;
+        top: 13vh; /* Mueve hacia abajo */
+        right: 4vh; /* Mueve hacia la izquierda */
+    }
+
+    .copyright__section:nth-child(3) {
+        /* Estilo para la tercera sección */
+        position: relative;
+        top: 13vh; /* Mueve hacia abajo */
+        right: -2vh; /* Mueve ligeramente hacia la derecha */
+    }
+
+    .copyright__section:nth-child(4) {
+        /* Estilo para la cuarta sección */
+        position: relative;
+        bottom: 6vh; /* Mueve hacia arriba */
+        right: 9vh; /* Mueve hacia la izquierda */
+        justify-items: start; /* ERROR: Propiedad no aplicable a flexbox */
+    }
+}
